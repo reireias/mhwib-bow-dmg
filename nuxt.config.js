@@ -1,5 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/vuetifier/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
   /*
@@ -67,5 +76,6 @@ export default {
   /*
    ** Build configuration
    */
-  build: {}
+  build: {},
+  ...routerBase
 }
