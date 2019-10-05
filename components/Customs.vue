@@ -59,24 +59,61 @@ export default {
     bow: {
       type: Object,
       default: null
+    },
+    value: {
+      type: Object,
+      default: null
     }
   },
   data() {
     return {
-      attackCustom: null,
-      affinityCustom: null,
-      elementCustom: null
+      attackCustomData: null,
+      affinityCustomData: null,
+      elementCustomData: null
     }
   },
   computed: {
+    attackCustom: {
+      get() {
+        return this.attackCustomData
+      },
+      set(v) {
+        this.attackCustomData = v
+        const newValue = { ...this.value }
+        newValue.attack = v ? v.value : 0
+        this.$emit('input', newValue)
+      }
+    },
+    affinityCustom: {
+      get() {
+        return this.affinityCustomData
+      },
+      set(v) {
+        this.affinityCustomData = v
+        const newValue = { ...this.value }
+        newValue.affinity = v ? v.value : 0
+        this.$emit('input', newValue)
+      }
+    },
+    elementCustom: {
+      get() {
+        return this.elementCustomData
+      },
+      set(v) {
+        this.elementCustomData = v
+        const newValue = { ...this.value }
+        newValue.element = v ? v.value : 0
+        this.$emit('input', newValue)
+      }
+    },
     attackCustoms() {
       const ret = customs.attack
       if (this.bow) {
         const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((custom) => {
-          custom.disabled =
+        ret.forEach((item) => {
+          item.disabled =
             maxSlot <
-            custom.slot + this.affinityCustomSlot + this.elementCustomSlot
+            item.slot + this.affinityCustomSlot + this.elementCustomSlot
         })
       }
       return ret
@@ -85,10 +122,9 @@ export default {
       const ret = customs.affinity
       if (this.bow) {
         const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((custom) => {
-          custom.disabled =
-            maxSlot <
-            custom.slot + this.attackCustomSlot + this.elementCustomSlot
+        ret.forEach((item) => {
+          item.disabled =
+            maxSlot < item.slot + this.attackCustomSlot + this.elementCustomSlot
         })
       }
       return ret
@@ -97,10 +133,10 @@ export default {
       const ret = customs.element
       if (this.bow) {
         const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((custom) => {
-          custom.disabled =
+        ret.forEach((item) => {
+          item.disabled =
             maxSlot <
-            custom.slot + this.attackCustomSlot + this.affinityCustomSlot
+            item.slot + this.attackCustomSlot + this.affinityCustomSlot
         })
       }
       return ret
@@ -116,8 +152,8 @@ export default {
     }
   },
   methods: {
-    customDisplayName(custom) {
-      return `${custom.name} [ ${slotMap[custom.slot]} +${custom.value} ]`
+    customDisplayName(item) {
+      return `${item.name} [ ${slotMap[item.slot]} +${item.value} ]`
     }
   }
 }
