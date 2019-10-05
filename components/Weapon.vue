@@ -8,7 +8,7 @@
     </v-row>
     <customs v-model="custom" :bow="bow"></customs>
     <v-row>
-      <parts-custom :bow="bow"></parts-custom>
+      <parts-custom v-model="parts" :bow="bow"></parts-custom>
     </v-row>
     <v-row>
       <v-col>
@@ -61,7 +61,8 @@ export default {
   data() {
     return {
       bow: null,
-      custom: { attack: 0, affinity: 0, element: 0 }
+      custom: { attack: 0, affinity: 0, element: 0 },
+      parts: { attack: 0, affinity: 0, element: 0 }
     }
   },
   computed: {
@@ -69,13 +70,19 @@ export default {
       return this.bow ? this.bow.attack : null
     },
     rawAttack() {
-      return this.bow ? this.bow.attack / 1.2 + this.custom.attack : null
+      return this.bow
+        ? this.bow.attack / 1.2 + this.custom.attack + this.parts.attack
+        : null
     },
     affinity() {
-      return this.bow ? this.bow.affinity + this.custom.affinity : null
+      return this.bow
+        ? this.bow.affinity + this.custom.affinity + this.parts.affinity
+        : null
     },
     element() {
-      return this.bow ? this.bow.element.value + this.custom.element : null
+      return this.bow
+        ? this.bow.element.value + this.custom.element + this.parts.element
+        : null
     }
   }
 }

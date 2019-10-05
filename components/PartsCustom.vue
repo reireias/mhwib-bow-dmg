@@ -1,9 +1,11 @@
 <template>
   <v-select
+    v-model="selected"
     label="パーツ強化"
     :disabled="!bow || !bow.parts"
     :items="parts"
     item-text="name"
+    clearable
     return-object
   ></v-select>
 </template>
@@ -13,6 +15,10 @@ import parts from '@/constants/parts'
 
 export default {
   props: {
+    value: {
+      type: Object,
+      default: null
+    },
     bow: {
       type: Object,
       default: null
@@ -20,7 +26,22 @@ export default {
   },
   data() {
     return {
-      parts
+      parts,
+      selectedData: null
+    }
+  },
+  computed: {
+    selected: {
+      get() {
+        return this.selectedData
+      },
+      set(v) {
+        this.selectedData = v
+        this.$emit(
+          'input',
+          v ? v.value : { attack: 0, affinity: 0, element: 0 }
+        )
+      }
     }
   }
 }
