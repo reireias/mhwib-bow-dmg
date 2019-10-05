@@ -1,6 +1,5 @@
 <template>
   <v-container>
-    <v-btn @click="debug">debug</v-btn>
     <v-row>
       <h1>武器</h1>
     </v-row>
@@ -74,11 +73,6 @@ export default {
     },
     element() {
       return this.bow ? this.bow.element.value : null
-    }
-  },
-  methods: {
-    debug() {
-      console.log(this.bow)
     }
   }
 }
