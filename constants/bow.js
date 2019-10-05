@@ -13,6 +13,21 @@ const bows = [
     },
     rare: 10,
     parts: true
+  },
+  {
+    name: 'ミスト＝グレイシア',
+    attack: 276,
+    affinity: 0,
+    element: {
+      type: 'ice',
+      value: 450
+    },
+    coationg: {
+      clossRange: true,
+      power: true
+    },
+    rare: 11,
+    parts: false
   }
 ]
 

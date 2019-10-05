@@ -19,6 +19,7 @@
           label="攻撃カスタム"
           :items="attackCustoms"
           :item-text="customDisplayName"
+          return-object
         ></v-select>
       </v-col>
       <v-col>
@@ -26,6 +27,7 @@
           label="会心カスタム"
           :items="affinityCustoms"
           :item-text="customDisplayName"
+          return-object
         ></v-select>
       </v-col>
       <v-col>
@@ -33,6 +35,7 @@
           label="属性カスタム"
           :items="elementCustoms"
           :item-text="customDisplayName"
+          return-object
         ></v-select>
       </v-col>
     </v-row>
@@ -81,7 +84,11 @@ import bows from '@/constants/bow'
 import customs from '@/constants/custom'
 
 const elementNameMap = {
-  thunder: '雷'
+  fire: '火',
+  water: '水',
+  thunder: '雷',
+  ice: '氷',
+  dragon: '龍'
 }
 const slotMap = {
   1: '①',
@@ -92,18 +99,50 @@ const slotMap = {
   6: '⑥',
   7: '⑦'
 }
+const reraSlotMap = {
+  10: 7,
+  11: 5,
+  12: 4
+}
 
 export default {
   data() {
     return {
       bows,
-      bow: null,
-      attackCustoms: customs.attack,
-      affinityCustoms: customs.affinity,
-      elementCustoms: customs.element
+      bow: null
     }
   },
   computed: {
+    attackCustoms() {
+      const ret = customs.attack
+      if (this.bow) {
+        const maxSlot = reraSlotMap[this.bow.rare]
+        ret.forEach((custom) => {
+          custom.disabled = maxSlot < custom.slot
+        })
+      }
+      return ret
+    },
+    affinityCustoms() {
+      const ret = customs.affinity
+      if (this.bow) {
+        const maxSlot = reraSlotMap[this.bow.rare]
+        ret.forEach((custom) => {
+          custom.disabled = maxSlot < custom.slot
+        })
+      }
+      return ret
+    },
+    elementCustoms() {
+      const ret = customs.element
+      if (this.bow) {
+        const maxSlot = reraSlotMap[this.bow.rare]
+        ret.forEach((custom) => {
+          custom.disabled = maxSlot < custom.slot
+        })
+      }
+      return ret
+    },
     attack() {
       return this.bow ? this.bow.attack : null
     },
