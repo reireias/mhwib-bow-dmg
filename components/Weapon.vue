@@ -4,17 +4,17 @@
       <h1>武器</h1>
     </v-row>
     <v-row>
-      <bow v-model="bow"></bow>
+      <bow></bow>
     </v-row>
-    <customs v-model="custom" :bow="bow"></customs>
+    <customs></customs>
     <v-row>
-      <parts-custom v-model="parts" :bow="bow"></parts-custom>
+      <parts-custom v-model="parts"></parts-custom>
     </v-row>
     <v-row>
       <v-col>
         <v-text-field
           label="攻撃力"
-          :value="attack"
+          :value="calcuratedWeapon.attack"
           readonly
           reverse
         ></v-text-field>
@@ -30,7 +30,7 @@
       <v-col>
         <v-text-field
           label="会心率"
-          :value="affinity"
+          :value="calcuratedWeapon.affinity"
           readonly
           reverse
         ></v-text-field>
@@ -38,7 +38,7 @@
       <v-col>
         <v-text-field
           label="属性値"
-          :value="element"
+          :value="calcuratedWeapon.element"
           readonly
           reverse
         ></v-text-field>
@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
 import Bow from '@/components/Bow'
 import Customs from '@/components/Customs'
 import PartsCustom from '@/components/PartsCustom'
@@ -60,28 +61,15 @@ export default {
   },
   data() {
     return {
-      bow: null,
-      custom: { attack: 0, affinity: 0, element: 0 },
       parts: { attack: 0, affinity: 0, element: 0 }
     }
   },
   computed: {
-    attack() {
-      return this.bow ? this.bow.attack : null
-    },
+    ...mapState(['bow', 'custom']),
+    ...mapGetters(['calcuratedWeapon']),
     rawAttack() {
-      return this.bow
-        ? this.bow.attack / 1.2 + this.custom.attack + this.parts.attack
-        : null
-    },
-    affinity() {
-      return this.bow
-        ? this.bow.affinity + this.custom.affinity + this.parts.affinity
-        : null
-    },
-    element() {
-      return this.bow
-        ? this.bow.element.value + this.custom.element + this.parts.element
+      return this.calcuratedWeapon.attack
+        ? this.calcuratedWeapon.attack / 1.2
         : null
     }
   }

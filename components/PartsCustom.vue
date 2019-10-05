@@ -18,10 +18,6 @@ export default {
     value: {
       type: Object,
       default: null
-    },
-    bow: {
-      type: Object,
-      default: null
     }
   },
   data() {
@@ -31,6 +27,9 @@ export default {
     }
   },
   computed: {
+    bow() {
+      return this.$store.state.bow
+    },
     selected: {
       get() {
         return this.selectedData

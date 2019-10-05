@@ -2,7 +2,7 @@
   <v-row>
     <v-col class="custom-select" cols="12" sm="4">
       <v-select
-        v-model="attackCustom"
+        v-model="attack"
         label="攻撃カスタム"
         :disabled="!bow"
         :items="attackCustoms"
@@ -13,7 +13,7 @@
     </v-col>
     <v-col class="custom-select" cols="12" sm="4">
       <v-select
-        v-model="affinityCustom"
+        v-model="affinity"
         label="会心カスタム"
         :disabled="!bow"
         :items="affinityCustoms"
@@ -24,7 +24,7 @@
     </v-col>
     <v-col class="custom-select" cols="12" sm="4">
       <v-select
-        v-model="elementCustom"
+        v-model="element"
         label="属性カスタム"
         :disabled="!bow"
         :items="elementCustoms"
@@ -37,124 +37,95 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+import { slotMap, rareSlotMap } from '@/constants/slot'
 import customs from '@/constants/custom'
 
-const slotMap = {
-  1: '①',
-  2: '②',
-  3: '③',
-  4: '④',
-  5: '⑤',
-  6: '⑥',
-  7: '⑦'
-}
-const reraSlotMap = {
-  10: 7,
-  11: 5,
-  12: 4
-}
-
 export default {
-  props: {
-    bow: {
-      type: Object,
-      default: null
-    },
-    value: {
-      type: Object,
-      default: null
-    }
-  },
   data() {
     return {
-      attackCustomData: null,
-      affinityCustomData: null,
-      elementCustomData: null
+      attackCustoms: customs.attack,
+      affinityCustoms: customs.affinity,
+      elementCustoms: customs.element
     }
   },
   computed: {
-    attackCustom: {
+    bow() {
+      return this.$store.state.bow
+    },
+    maxSlot() {
+      return rareSlotMap[this.bow.rare]
+    },
+    attack: {
       get() {
-        return this.attackCustomData
+        return this.$store.state.custom.attack
       },
-      set(v) {
-        this.attackCustomData = v
-        const newValue = { ...this.value }
-        newValue.attack = v ? v.value : 0
-        this.$emit('input', newValue)
+      set(value) {
+        this.setCustomAttack(value)
+        this.update()
       }
     },
-    affinityCustom: {
+    affinity: {
       get() {
-        return this.affinityCustomData
+        return this.$store.state.custom.affinity
       },
-      set(v) {
-        this.affinityCustomData = v
-        const newValue = { ...this.value }
-        newValue.affinity = v ? v.value : 0
-        this.$emit('input', newValue)
+      set(value) {
+        this.setCustomAffinity(value)
+        this.update()
       }
     },
-    elementCustom: {
+    element: {
       get() {
-        return this.elementCustomData
+        return this.$store.state.custom.element
       },
-      set(v) {
-        this.elementCustomData = v
-        const newValue = { ...this.value }
-        newValue.element = v ? v.value : 0
-        this.$emit('input', newValue)
+      set(value) {
+        this.setCustomElement(value)
+        this.update()
       }
     },
-    attackCustoms() {
-      const ret = customs.attack
+    attackSlot() {
+      return this.attack ? this.attack.slot : 0
+    },
+    affinitySlot() {
+      return this.affinity ? this.affinity.slot : 0
+    },
+    elementSlot() {
+      return this.element ? this.element.slot : 0
+    }
+  },
+  watch: {
+    bow() {
       if (this.bow) {
-        const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((item) => {
-          item.disabled =
-            maxSlot <
-            item.slot + this.affinityCustomSlot + this.elementCustomSlot
-        })
+        this.update()
       }
-      return ret
-    },
-    affinityCustoms() {
-      const ret = customs.affinity
-      if (this.bow) {
-        const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((item) => {
-          item.disabled =
-            maxSlot < item.slot + this.attackCustomSlot + this.elementCustomSlot
-        })
-      }
-      return ret
-    },
-    elementCustoms() {
-      const ret = customs.element
-      if (this.bow) {
-        const maxSlot = reraSlotMap[this.bow.rare]
-        ret.forEach((item) => {
-          item.disabled =
-            maxSlot <
-            item.slot + this.attackCustomSlot + this.affinityCustomSlot
-        })
-      }
-      return ret
-    },
-    attackCustomSlot() {
-      return this.attackCustom ? this.attackCustom.slot : 0
-    },
-    affinityCustomSlot() {
-      return this.affinityCustom ? this.affinityCustom.slot : 0
-    },
-    elementCustomSlot() {
-      return this.elementCustom ? this.elementCustom.slot : 0
     }
   },
   methods: {
     customDisplayName(item) {
       return `${item.name} [ ${slotMap[item.slot]} +${item.value} ]`
-    }
+    },
+    // レア度によるスロットと、現在選択されているカスタム強化から、
+    // 上限を超える選択肢をdisabledにする
+    update() {
+      this.updateCustoms(
+        this.attackCustoms,
+        this.affinitySlot + this.elementSlot
+      )
+      this.updateCustoms(
+        this.affinityCustoms,
+        this.attackSlot + this.elementSlot
+      )
+      this.updateCustoms(
+        this.elementCustoms,
+        this.attackSlot + this.affinitySlot
+      )
+    },
+    updateCustoms(targetCustoms, otherSlot) {
+      targetCustoms.forEach((item) => {
+        item.disabled = this.maxSlot < item.slot + otherSlot
+      })
+    },
+    ...mapActions(['setCustomAttack', 'setCustomAffinity', 'setCustomElement'])
   }
 }
 </script>

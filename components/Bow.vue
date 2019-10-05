@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import bows from '@/constants/bow'
 
 const elementNameMap = {
@@ -20,12 +21,6 @@ const elementNameMap = {
 }
 
 export default {
-  props: {
-    value: {
-      type: Object,
-      default: null
-    }
-  },
   data() {
     return {
       bows
@@ -34,10 +29,10 @@ export default {
   computed: {
     bow: {
       get() {
-        return this.value
+        return this.$store.state.bow
       },
-      set(v) {
-        this.$emit('input', v)
+      set(value) {
+        this.setBow(value)
       }
     }
   },
@@ -49,7 +44,8 @@ export default {
       } else {
         return `${bow.name} [ ${bow.attack}, ${elementName}${bow.element.value}, ${bow.affinity}% ]`
       }
-    }
+    },
+    ...mapActions(['setBow'])
   }
 }
 </script>
