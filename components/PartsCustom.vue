@@ -43,6 +43,11 @@ export default {
         )
       }
     }
+  },
+  watch: {
+    bow() {
+      this.selected = null
+    }
   }
 }
 </script>
