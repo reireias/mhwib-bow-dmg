@@ -4,6 +4,7 @@
       <v-select
         v-model="attackCustom"
         label="攻撃カスタム"
+        :disabled="!bow"
         :items="attackCustoms"
         :item-text="customDisplayName"
         clearable
@@ -14,6 +15,7 @@
       <v-select
         v-model="affinityCustom"
         label="会心カスタム"
+        :disabled="!bow"
         :items="affinityCustoms"
         :item-text="customDisplayName"
         clearable
@@ -24,6 +26,7 @@
       <v-select
         v-model="elementCustom"
         label="属性カスタム"
+        :disabled="!bow"
         :items="elementCustoms"
         :item-text="customDisplayName"
         clearable

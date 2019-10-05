@@ -8,7 +8,7 @@
     </v-row>
     <customs :bow="bow"></customs>
     <v-row>
-      <v-select label="パーツ強化" :disabled="!bow || !bow.parts"></v-select>
+      <parts-custom :bow="bow"></parts-custom>
     </v-row>
     <v-row>
       <v-col>
@@ -50,11 +50,13 @@
 <script>
 import Bow from '@/components/Bow'
 import Customs from '@/components/Customs'
+import PartsCustom from '@/components/PartsCustom'
 
 export default {
   components: {
     Bow,
-    Customs
+    Customs,
+    PartsCustom
   },
   data() {
     return {
