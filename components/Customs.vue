@@ -42,16 +42,18 @@ import { slotMap, rareSlotMap } from '@/constants/slot'
 import customs from '@/constants/custom'
 
 export default {
-  data() {
-    return {
-      attackCustoms: customs.attack,
-      affinityCustoms: customs.affinity,
-      elementCustoms: customs.element
-    }
-  },
   computed: {
     bow() {
       return this.$store.state.bow
+    },
+    attackCustoms() {
+      return this.bow ? customs[this.bow.rare].attack : []
+    },
+    affinityCustoms() {
+      return this.bow ? customs[this.bow.rare].affinity : []
+    },
+    elementCustoms() {
+      return this.bow ? customs[this.bow.rare].element : []
     },
     maxSlot() {
       return rareSlotMap[this.bow.rare]
@@ -96,6 +98,9 @@ export default {
   watch: {
     bow() {
       if (this.bow) {
+        this.attack = null
+        this.affinity = null
+        this.element = null
         this.update()
       }
     }

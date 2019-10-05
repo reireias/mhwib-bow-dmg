@@ -1,6 +1,7 @@
 export const state = () => ({
   bow: null,
-  custom: { attack: null, affinity: null, element: null }
+  custom: { attack: null, affinity: null, element: null },
+  parts: null
 })
 
 export const mutations = {
@@ -15,6 +16,9 @@ export const mutations = {
   },
   setCustomElement(state, element) {
     state.custom.element = element
+  },
+  setParts(state, parts) {
+    state.parts = parts
   }
 }
 
@@ -30,6 +34,9 @@ export const actions = {
   },
   setCustomElement({ commit }, payload) {
     commit('setCustomElement', payload)
+  },
+  setParts({ commit }, payload) {
+    commit('setParts', payload)
   }
 }
 
@@ -37,13 +44,18 @@ export const getters = {
   // 武器 + カスタム強化 + パーツ強化の値
   calcuratedWeapon(state, getters) {
     const attack = state.bow
-      ? state.bow.attack + getters.customAttackValue * 1.2
+      ? state.bow.attack +
+        (getters.customAttackValue + getters.partsValue.attack) * 1.2
       : null
     const affinity = state.bow
-      ? state.bow.affinity + getters.customAffinityValue
+      ? state.bow.affinity +
+        getters.customAffinityValue +
+        getters.partsValue.affinity
       : null
     const element = state.bow
-      ? state.bow.element.value + getters.customElementValue
+      ? state.bow.element.value +
+        getters.customElementValue +
+        getters.partsValue.element
       : null
     return {
       attack,
@@ -59,5 +71,10 @@ export const getters = {
   },
   customElementValue(state) {
     return state.custom.element ? state.custom.element.value : 0
+  },
+  partsValue(state) {
+    return state.parts
+      ? state.parts.value
+      : { attack: 0, affinity: 0, element: 0 }
   }
 }

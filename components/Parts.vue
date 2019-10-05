@@ -1,6 +1,6 @@
 <template>
   <v-select
-    v-model="selected"
+    v-model="value"
     label="パーツ強化"
     :disabled="!bow || !bow.parts"
     :items="parts"
@@ -11,42 +11,37 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import parts from '@/constants/parts'
 
 export default {
-  props: {
-    value: {
-      type: Object,
-      default: null
-    }
-  },
   data() {
     return {
-      parts,
-      selectedData: null
+      parts
     }
   },
   computed: {
     bow() {
       return this.$store.state.bow
     },
-    selected: {
+    value: {
       get() {
-        return this.selectedData
+        return this.$store.state.parts
       },
       set(v) {
-        this.selectedData = v
-        this.$emit(
-          'input',
-          v ? v.value : { attack: 0, affinity: 0, element: 0 }
-        )
+        this.setParts(v)
       }
     }
   },
   watch: {
     bow() {
-      this.selected = null
+      if (this.bow && !this.bow.parts) {
+        this.value = null
+      }
     }
+  },
+  methods: {
+    ...mapActions(['setParts'])
   }
 }
 </script>

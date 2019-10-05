@@ -8,7 +8,7 @@
     </v-row>
     <customs></customs>
     <v-row>
-      <parts-custom v-model="parts"></parts-custom>
+      <parts></parts>
     </v-row>
     <v-row>
       <v-col>
@@ -51,18 +51,13 @@
 import { mapState, mapGetters } from 'vuex'
 import Bow from '@/components/Bow'
 import Customs from '@/components/Customs'
-import PartsCustom from '@/components/PartsCustom'
+import Parts from '@/components/Parts'
 
 export default {
   components: {
     Bow,
     Customs,
-    PartsCustom
-  },
-  data() {
-    return {
-      parts: { attack: 0, affinity: 0, element: 0 }
-    }
+    Parts
   },
   computed: {
     ...mapState(['bow', 'custom']),
