@@ -41,9 +41,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.row {
-  border: solid green 1px;
-}
-</style>
