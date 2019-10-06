@@ -2,6 +2,15 @@ export const state = () => ({
   bow: null,
   custom: { attack: null, affinity: null, element: null },
   parts: null,
+  buf: {
+    coating: null,
+    powerCharm: true,
+    powerTalon: true,
+    demonPowder: true,
+    canteen: 15,
+    demonDrug: null,
+    seed: 10
+  },
   motions: [],
   monster: null,
   target: null
@@ -31,6 +40,9 @@ export const mutations = {
   },
   setTarget(state, target) {
     state.target = target
+  },
+  setBuf(state, buf) {
+    state.buf = Object.assign({}, state.buf, buf)
   }
 }
 
@@ -58,6 +70,9 @@ export const actions = {
   },
   setTarget({ commit }, payload) {
     commit('setTarget', payload)
+  },
+  setBuf({ commit }, payload) {
+    commit('setBuf', payload)
   }
 }
 
