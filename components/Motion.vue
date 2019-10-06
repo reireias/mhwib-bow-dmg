@@ -14,7 +14,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="(selected, index) in selectedMotions" :key="selected.name">
+      <v-col v-for="(selected, index) in selectedMotions" :key="index">
         <v-chip close @click:close="deleteMotion(index)">{{
           selected.name
         }}</v-chip>
