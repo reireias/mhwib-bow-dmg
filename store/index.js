@@ -11,6 +11,10 @@ export const state = () => ({
     demonDrug: null,
     seed: 10
   },
+  skill: {
+    weaknessExploit: 3,
+    elementAttack: 6
+  },
   motions: [],
   monster: null,
   target: null
@@ -32,6 +36,12 @@ export const mutations = {
   setParts(state, parts) {
     state.parts = parts
   },
+  setBuf(state, buf) {
+    state.buf = Object.assign({}, state.buf, buf)
+  },
+  setSkill(state, skill) {
+    state.skill = Object.assign({}, state.skill, skill)
+  },
   setMotions(state, motions) {
     state.motions = motions
   },
@@ -40,9 +50,6 @@ export const mutations = {
   },
   setTarget(state, target) {
     state.target = target
-  },
-  setBuf(state, buf) {
-    state.buf = Object.assign({}, state.buf, buf)
   }
 }
 
@@ -62,6 +69,12 @@ export const actions = {
   setParts({ commit }, payload) {
     commit('setParts', payload)
   },
+  setBuf({ commit }, payload) {
+    commit('setBuf', payload)
+  },
+  setSkill({ commit }, payload) {
+    commit('setSkill', payload)
+  },
   setMotions({ commit }, payload) {
     commit('setMotions', payload)
   },
@@ -70,9 +83,6 @@ export const actions = {
   },
   setTarget({ commit }, payload) {
     commit('setTarget', payload)
-  },
-  setBuf({ commit }, payload) {
-    commit('setBuf', payload)
   }
 }
 

@@ -15,6 +15,7 @@ export const createStore = (getters = null) => {
         demonDrug: null,
         seed: 10
       },
+      skill: {},
       motions: [],
       monster: null,
       target: null
