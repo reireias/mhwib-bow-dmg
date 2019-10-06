@@ -22,6 +22,9 @@
           return-object
         ></v-select>
       </v-col>
+      <v-col>
+        <v-checkbox v-model="wounded" label="傷" color="primary"></v-checkbox>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -54,6 +57,14 @@ export default {
         this.setTarget(value)
       }
     },
+    wounded: {
+      get() {
+        return this.$store.state.wounded
+      },
+      set(value) {
+        this.setWounded(value)
+      }
+    },
     parts() {
       return this.monster ? this.monster.parts : []
     },
@@ -73,7 +84,7 @@ export default {
         return `${item.name} [弾${item.ammo}]`
       }
     },
-    ...mapActions(['setMonster', 'setTarget'])
+    ...mapActions(['setMonster', 'setTarget', 'setWounded'])
   }
 }
 </script>

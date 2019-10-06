@@ -17,7 +17,8 @@ export const state = () => ({
   },
   motions: [],
   monster: null,
-  target: null
+  target: null,
+  wounded: false
 })
 
 export const mutations = {
@@ -50,6 +51,9 @@ export const mutations = {
   },
   setTarget(state, target) {
     state.target = target
+  },
+  setWounded(state, wounded) {
+    state.wounded = wounded
   }
 }
 
@@ -83,6 +87,9 @@ export const actions = {
   },
   setTarget({ commit }, payload) {
     commit('setTarget', payload)
+  },
+  setWounded({ commit }, payload) {
+    commit('setWounded', payload)
   }
 }
 
