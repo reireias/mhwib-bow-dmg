@@ -2,7 +2,9 @@ export const state = () => ({
   bow: null,
   custom: { attack: null, affinity: null, element: null },
   parts: null,
-  motions: []
+  motions: [],
+  monster: null,
+  target: null
 })
 
 export const mutations = {
@@ -23,6 +25,12 @@ export const mutations = {
   },
   setMotions(state, motions) {
     state.motions = motions
+  },
+  setMonster(state, monster) {
+    state.monster = monster
+  },
+  setTarget(state, target) {
+    state.target = target
   }
 }
 
@@ -44,6 +52,12 @@ export const actions = {
   },
   setMotions({ commit }, payload) {
     commit('setMotions', payload)
+  },
+  setMonster({ commit }, payload) {
+    commit('setMonster', payload)
+  },
+  setTarget({ commit }, payload) {
+    commit('setTarget', payload)
   }
 }
 

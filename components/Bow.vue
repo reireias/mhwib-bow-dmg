@@ -11,14 +11,7 @@
 <script>
 import { mapActions } from 'vuex'
 import bows from '@/constants/bow'
-
-const elementNameMap = {
-  fire: '火',
-  water: '水',
-  thunder: '雷',
-  ice: '氷',
-  dragon: '龍'
-}
+import { elementNameMap } from '@/constants/element'
 
 export default {
   data() {
