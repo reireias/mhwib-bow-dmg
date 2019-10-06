@@ -102,7 +102,7 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-btn>リセット</v-btn>
+      <v-btn @click="reset">リセット</v-btn>
     </v-row>
   </v-container>
 </template>
@@ -218,6 +218,20 @@ export default {
   methods: {
     displaySkill(item) {
       return `${item.name}: ${item.description}`
+    },
+    reset() {
+      this.attackBoost = null
+      this.criticalEye = null
+      this.weaknessExploit = null
+      this.criticalBoost = null
+      this.agitator = null
+      this.peakPerformance = null
+      this.latentPower = null
+      this.fortify = null
+      this.elementAttack = null
+      this.freeElem = null
+      this.criticalElement = null
+      this.elementBoost = null
     },
     ...mapActions(['setSkill'])
   }
