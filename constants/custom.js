@@ -10,9 +10,9 @@ const affinity = [
 ]
 const element = [
   { name: 'Lv.1', slot: 1, value: 30 },
-  { name: 'Lv.2', slot: 3, value: 70 },
-  { name: 'Lv.3', slot: 5, value: 100 },
-  { name: 'Lv.4', slot: 7, value: 130 }
+  { name: 'Lv.2', slot: 3, value: 60 },
+  { name: 'Lv.3', slot: 5, value: 90 },
+  { name: 'Lv.4', slot: 7, value: 120 }
 ]
 
 const customs = {
