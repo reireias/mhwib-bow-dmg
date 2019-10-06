@@ -47,7 +47,7 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\" returnobject=\\"true\\"></v-select-stub></v-col-stub> <v-col-stub tag=\\"div\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" backgroundcolor=\\"\\" label=\\"傷\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\" returnobject=\\"true\\"></v-select-stub></v-col-stub> <v-col-stub tag=\\"div\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"傷\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {

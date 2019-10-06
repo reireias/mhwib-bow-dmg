@@ -18,7 +18,7 @@ export const state = () => ({
   motions: [],
   monster: null,
   target: null,
-  wounded: false
+  wounded: true
 })
 
 export const mutations = {

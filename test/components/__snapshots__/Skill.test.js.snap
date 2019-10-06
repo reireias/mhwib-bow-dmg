@@ -47,7 +47,7 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub cols=\\"4\\" md=\\"2\\" tag=\\"div\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"弱点特効\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub cols=\\"4\\" md=\\"2\\" tag=\\"div\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"3\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"弱点特効\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -185,7 +185,7 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub cols=\\"4\\" md=\\"2\\" tag=\\"div\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"属性強化\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub cols=\\"4\\" md=\\"2\\" tag=\\"div\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"6\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"属性強化\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
