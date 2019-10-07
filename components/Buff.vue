@@ -13,21 +13,21 @@
       ></v-select>
     </v-row>
     <v-row>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-checkbox
           v-model="powerCharm"
           label="護符(+6)"
           color="primary"
         ></v-checkbox>
       </v-col>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-checkbox
           v-model="powerTalon"
           label="爪(+9)"
           color="primary"
         ></v-checkbox>
       </v-col>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-checkbox
           v-model="demonPowder"
           label="鬼人の粉塵(+10)"
@@ -36,31 +36,31 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-select
           v-model="canteen"
           :items="canteens"
-          :item-text="displayBuf"
+          :item-text="displayBuff"
           item-value="value"
           label="食事"
           clearable
         ></v-select>
       </v-col>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-select
           v-model="demonDrug"
           :items="demonDrugs"
-          :item-text="displayBuf"
+          :item-text="displayBuff"
           item-value="value"
           label="鬼人薬"
           clearable
         ></v-select>
       </v-col>
-      <v-col class="buf-col">
+      <v-col class="buff-col">
         <v-select
           v-model="seed"
           :items="seeds"
-          :item-text="displayBuf"
+          :item-text="displayBuff"
           item-value="value"
           label="種/丸薬"
           clearable
@@ -72,7 +72,7 @@
 
 <script>
 import { mapActions } from 'vuex'
-import { canteens, demonDrugs, seeds } from '@/constants/buf'
+import { canteens, demonDrugs, seeds } from '@/constants/buff'
 import { coatings } from '@/constants/bow'
 
 export default {
@@ -93,58 +93,58 @@ export default {
     },
     coating: {
       get() {
-        return this.$store.state.buf.coating
+        return this.$store.state.buff.coating
       },
       set(value) {
-        this.setBuf({ coating: value })
+        this.setBuff({ coating: value })
       }
     },
     powerCharm: {
       get() {
-        return this.$store.state.buf.powerCharm
+        return this.$store.state.buff.powerCharm
       },
       set(value) {
-        this.setBuf({ powerCharm: value })
+        this.setBuff({ powerCharm: value })
       }
     },
     powerTalon: {
       get() {
-        return this.$store.state.buf.powerTalon
+        return this.$store.state.buff.powerTalon
       },
       set(value) {
-        this.setBuf({ powerTalon: value })
+        this.setBuff({ powerTalon: value })
       }
     },
     demonPowder: {
       get() {
-        return this.$store.state.buf.demonPowder
+        return this.$store.state.buff.demonPowder
       },
       set(value) {
-        this.setBuf({ demonPowder: value })
+        this.setBuff({ demonPowder: value })
       }
     },
     canteen: {
       get() {
-        return this.$store.state.buf.canteen
+        return this.$store.state.buff.canteen
       },
       set(value) {
-        this.setBuf({ canteen: value })
+        this.setBuff({ canteen: value })
       }
     },
     demonDrug: {
       get() {
-        return this.$store.state.buf.demonDrug
+        return this.$store.state.buff.demonDrug
       },
       set(value) {
-        this.setBuf({ demonDrug: value })
+        this.setBuff({ demonDrug: value })
       }
     },
     seed: {
       get() {
-        return this.$store.state.buf.seed
+        return this.$store.state.buff.seed
       },
       set(value) {
-        this.setBuf({ seed: value })
+        this.setBuff({ seed: value })
       }
     }
   },
@@ -161,7 +161,7 @@ export default {
     }
   },
   methods: {
-    displayBuf(item) {
+    displayBuff(item) {
       return `${item.name} [+${item.value}]`
     },
     coatingDisplay(item) {
@@ -176,13 +176,13 @@ export default {
         this.coatingsData[1].disabled = false
       }
     },
-    ...mapActions(['setBuf'])
+    ...mapActions(['setBuff'])
   }
 }
 </script>
 
 <style>
-.buf-col {
+.buff-col {
   padding-top: 0px;
   padding-bottom: 0px;
 }

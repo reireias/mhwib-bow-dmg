@@ -6490,6 +6490,11 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
+mhwdmg@>=0.0.1:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/mhwdmg/-/mhwdmg-0.2.2.tgz#e82f5b4b512e03496c26a24b52beb2c0f97e09bd"
+  integrity sha512-Hzuybs7w1P2y/a78FVzr0OZexq9/cRyCVT8K4S/nZg0Szza0jPuRJZfZrD/3kWLcLTWsDvAigB2k736d1zG+0w==
+
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"

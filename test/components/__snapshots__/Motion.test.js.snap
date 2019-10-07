@@ -3,27 +3,27 @@
 exports[`instance should be vue instance 1`] = `
 "<v-container-stub tag=\\"div\\"><v-row-stub tag=\\"div\\"><h1>モーション</h1></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">溜め1
         <div class=\\"motion-description\\">
-          &nbsp;[7×1, 0.5倍]
+          &nbsp;[7×1, 0.2倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">溜め2
         <div class=\\"motion-description\\">
-          &nbsp;[9×2, 0.7倍]
+          &nbsp;[9×2, 0.35倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">溜め3
         <div class=\\"motion-description\\">
-          &nbsp;[10×3, 1.0倍]
+          &nbsp;[10×3, 0.7倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">溜め4
         <div class=\\"motion-description\\">
-          &nbsp;[11×3, 1.05倍]
+          &nbsp;[11×3, 0.8倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">QS
         <div class=\\"motion-description\\">
-          &nbsp;[6×3, 0.5倍]
+          &nbsp;[6×3, 0.3倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">剛射2
         <div class=\\"motion-description\\">
-          &nbsp;[9×3, 0.7倍]
+          &nbsp;[9×3, 0.5倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">剛射3
         <div class=\\"motion-description\\">
-          &nbsp;[11×5, 1.0倍]
+          &nbsp;[11×5, 0.7倍]
         </div></v-btn-stub></v-col-stub><v-col-stub tag=\\"div\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">剛射4
         <div class=\\"motion-description\\">
-          &nbsp;[11×6, 1.1倍]
+          &nbsp;[11×6, 1.0倍]
         </div></v-btn-stub></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"></v-row-stub> <v-row-stub tag=\\"div\\" justify=\\"center\\"><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">リセット</v-btn-stub></v-row-stub></v-container-stub>"
 `;

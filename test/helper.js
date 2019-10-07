@@ -6,7 +6,7 @@ export const createStore = (getters = null) => {
       bow: null,
       custom: { attack: null, affinity: null, element: null },
       parts: null,
-      buf: {
+      buff: {
         coating: null,
         powerCharm: true,
         powerTalon: true,

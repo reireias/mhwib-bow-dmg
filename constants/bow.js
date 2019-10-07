@@ -41,7 +41,7 @@ const bows = [
       crossRange: true,
       power: false
     },
-    rare: 12,
+    rare: 11,
     parts: true
   }
 ]

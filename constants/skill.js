@@ -80,7 +80,7 @@ const skills = {
   // 会心撃【属性】
   criticalElement: [
     { name: '会心撃【属性】', value: 1, description: '1.35倍' },
-    { name: '真・会心撃【属性】', value: 2, description: '1.5倍' }
+    { name: '真・会心撃【属性】', value: 2, description: '1.55倍' }
   ],
   // 属性加速
   elementBoost: [

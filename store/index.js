@@ -2,7 +2,7 @@ export const state = () => ({
   bow: null,
   custom: { attack: null, affinity: null, element: null },
   parts: null,
-  buf: {
+  buff: {
     coating: null,
     powerCharm: true,
     powerTalon: true,
@@ -18,6 +18,7 @@ export const state = () => ({
   motions: [],
   monster: null,
   target: null,
+  anger: true,
   wounded: true
 })
 
@@ -37,8 +38,8 @@ export const mutations = {
   setParts(state, parts) {
     state.parts = parts
   },
-  setBuf(state, buf) {
-    state.buf = Object.assign({}, state.buf, buf)
+  setBuff(state, buff) {
+    state.buff = Object.assign({}, state.buff, buff)
   },
   setSkill(state, skill) {
     state.skill = Object.assign({}, state.skill, skill)
@@ -51,6 +52,9 @@ export const mutations = {
   },
   setTarget(state, target) {
     state.target = target
+  },
+  setAnger(state, anger) {
+    state.anger = anger
   },
   setWounded(state, wounded) {
     state.wounded = wounded
@@ -73,8 +77,8 @@ export const actions = {
   setParts({ commit }, payload) {
     commit('setParts', payload)
   },
-  setBuf({ commit }, payload) {
-    commit('setBuf', payload)
+  setBuff({ commit }, payload) {
+    commit('setBuff', payload)
   },
   setSkill({ commit }, payload) {
     commit('setSkill', payload)
@@ -88,6 +92,9 @@ export const actions = {
   setTarget({ commit }, payload) {
     commit('setTarget', payload)
   },
+  setAnger({ commit }, payload) {
+    commit('setAnger', payload)
+  },
   setWounded({ commit }, payload) {
     commit('setWounded', payload)
   }
@@ -100,6 +107,7 @@ export const getters = {
       ? state.bow.attack +
         (getters.customAttackValue + getters.partsValue.attack) * 1.2
       : null
+    const rawAttack = attack ? attack / 1.2 : null
     const affinity = state.bow
       ? state.bow.affinity +
         getters.customAffinityValue +
@@ -112,6 +120,7 @@ export const getters = {
       : null
     return {
       attack,
+      rawAttack,
       affinity,
       element
     }
@@ -129,5 +138,20 @@ export const getters = {
     return state.parts
       ? state.parts.value
       : { attack: 0, affinity: 0, element: 0 }
+  },
+  buff(state) {
+    const buff = { ...state.buff }
+    switch (buff.coating) {
+      case 1.35:
+        buff.coating = 'power'
+        break
+      case 1.2:
+        buff.coating = 'crossRange'
+        break
+      default:
+        buff.coating = undefined
+        break
+    }
+    return buff
   }
 }

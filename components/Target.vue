@@ -4,7 +4,7 @@
       <h1>ターゲット</h1>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col cols="6" sm="3">
         <v-select
           v-model="monster"
           label="モンスター"
@@ -13,7 +13,7 @@
           return-object
         ></v-select>
       </v-col>
-      <v-col>
+      <v-col cols="6" sm="3">
         <v-select
           v-model="target"
           label="部位"
@@ -22,7 +22,10 @@
           return-object
         ></v-select>
       </v-col>
-      <v-col>
+      <v-col cols="6" sm="3">
+        <v-checkbox v-model="anger" label="怒り" color="primary"></v-checkbox>
+      </v-col>
+      <v-col cols="6" sm="3">
         <v-checkbox v-model="wounded" label="傷" color="primary"></v-checkbox>
       </v-col>
     </v-row>
@@ -57,6 +60,14 @@ export default {
         this.setTarget(value)
       }
     },
+    anger: {
+      get() {
+        return this.$store.state.anger
+      },
+      set(value) {
+        this.setAnger(value)
+      }
+    },
     wounded: {
       get() {
         return this.$store.state.wounded
@@ -84,7 +95,7 @@ export default {
         return `${item.name} [弾${item.ammo}]`
       }
     },
-    ...mapActions(['setMonster', 'setTarget', 'setWounded'])
+    ...mapActions(['setMonster', 'setTarget', 'setWounded', 'setAnger'])
   }
 }
 </script>

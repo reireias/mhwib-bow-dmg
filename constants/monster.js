@@ -1,5 +1,21 @@
 const monsters = [
   {
+    name: '柱/荷車',
+    parts: [
+      {
+        name: '全身',
+        cut: 80,
+        blunt: 80,
+        ammo: 80,
+        fire: 30,
+        water: 30,
+        thunder: 30,
+        ice: 30,
+        dragon: 30
+      }
+    ]
+  },
+  {
     name: 'アンジャナフ',
     parts: [
       {

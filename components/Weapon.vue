@@ -22,7 +22,7 @@
       <v-col>
         <v-text-field
           label="武器倍率"
-          :value="rawAttack"
+          :value="calcuratedWeapon.rawAttack"
           readonly
           reverse
         ></v-text-field>
@@ -61,12 +61,7 @@ export default {
   },
   computed: {
     ...mapState(['bow', 'custom']),
-    ...mapGetters(['calcuratedWeapon']),
-    rawAttack() {
-      return this.calcuratedWeapon.attack
-        ? this.calcuratedWeapon.attack / 1.2
-        : null
-    }
+    ...mapGetters(['calcuratedWeapon'])
   }
 }
 </script>

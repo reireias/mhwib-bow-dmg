@@ -2,7 +2,7 @@ import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Vuetify from 'vuetify'
-import target from '@/components/Buf'
+import target from '@/components/Buff'
 import { createStore } from '@/test/helper'
 
 Vue.use(Vuetify)

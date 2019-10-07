@@ -7,7 +7,7 @@
       <weapon></weapon>
     </v-row>
     <v-row>
-      <buf></buf>
+      <buff></buff>
     </v-row>
     <v-row>
       <skill></skill>
@@ -18,26 +18,28 @@
     <v-row>
       <target></target>
     </v-row>
-    <v-row justify="center">
-      <v-btn color="primary">計算</v-btn>
+    <v-row>
+      <result></result>
     </v-row>
   </v-container>
 </template>
 
 <script>
 import Weapon from '@/components/Weapon'
-import Buf from '@/components/Buf'
+import Buff from '@/components/Buff'
 import Skill from '@/components/Skill'
 import Motion from '@/components/Motion'
 import Target from '@/components/Target'
+import Result from '@/components/Result'
 
 export default {
   components: {
     Weapon,
-    Buf,
+    Buff,
     Skill,
     Motion,
-    Target
+    Target,
+    Result
   }
 }
 </script>
