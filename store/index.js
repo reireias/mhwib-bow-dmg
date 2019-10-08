@@ -139,8 +139,45 @@ export const getters = {
       ? state.parts.value
       : { attack: 0, affinity: 0, element: 0 }
   },
+  weapon(state, getters) {
+    const calcuratedWeapon = getters.calcuratedWeapon
+    return {
+      attack: calcuratedWeapon.rawAttack,
+      affinity: calcuratedWeapon.affinity,
+      element: calcuratedWeapon.element,
+      elementHidden: state.bow.element.hidden,
+      sharpness: 'ammo'
+    }
+  },
+  target(state) {
+    return {
+      physicalEffectiveness: state.target.ammo,
+      // TODO: bowにelement必ず入るかチェック
+      elementalEffectiveness: state.target[state.bow.element.type],
+      anger: state.anger,
+      wounded: state.wounded
+    }
+  },
   buff(state) {
-    const buff = { ...state.buff }
+    const buff = {
+      powerCharm: state.buff.powerCharm,
+      powerTalon: state.buff.powerTalon,
+      demonPowder: state.buff.demonPowder
+    }
+    if (state.buff.seed === 10) {
+      buff.mightSeed = true
+    } else if (state.buff.seed === 25) {
+      buff.mightPill = true
+    }
+    if (state.buff.demonDrug === 5) {
+      buff.demonDrug = true
+    } else if (state.buff.demonDrug === 7) {
+      buff.megaDemondrug = true
+    }
+    if (state.buff.canteen) {
+      const canteenMap = { 5: 'S', 10: 'M', 15: 'L' }
+      buff.canteen = canteenMap[state.buff.canteen]
+    }
     switch (buff.coating) {
       case 1.35:
         buff.coating = 'power'
@@ -153,5 +190,13 @@ export const getters = {
         break
     }
     return buff
+  },
+  condition(state, getters) {
+    return {
+      weapon: getters.weapon,
+      target: getters.target,
+      buff: getters.buff,
+      skill: state.skill
+    }
   }
 }

@@ -4,7 +4,7 @@
       <h1>モーション</h1>
     </v-row>
     <v-row>
-      <v-col v-for="motion in motions" :key="motion.name">
+      <v-col v-for="motion in motions" :key="motion.name" cols="6" md="3">
         <v-btn @click="addMotion(motion)"
           >{{ motion.name }}
           <div class="motion-description">
@@ -44,6 +44,11 @@ export default {
       set(value) {
         this.setMotions(value)
       }
+    }
+  },
+  mounted() {
+    if (!this.selectedMotions.length) {
+      this.addMotion(motions[7])
     }
   },
   methods: {

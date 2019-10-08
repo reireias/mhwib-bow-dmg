@@ -4,7 +4,14 @@
       <v-btn color="primary" @click="calcurate">計算</v-btn>
     </v-row>
     <v-row>
-      {{ results }}
+      <client-only>
+        <v-data-table
+          class="result-table"
+          :headers="headers"
+          :items="results"
+          hide-default-footer
+        ></v-data-table>
+      </client-only>
     </v-row>
   </v-container>
 </template>
@@ -16,45 +23,49 @@ import { mapState, mapGetters } from 'vuex'
 export default {
   data() {
     return {
-      results: null
+      results: [],
+      headers: [
+        { text: 'モーション', value: 'motionName', sortable: false },
+        { text: 'ダメージ', value: 'damageText', sortable: false },
+        { text: '物理', value: 'physical', sortable: false },
+        { text: '属性', value: 'elemental', sortable: false },
+        { text: '合計', value: 'total', sortable: false }
+      ]
     }
   },
   computed: {
-    ...mapState(['bow', 'motions', 'target', 'anger', 'wounded']),
-    ...mapGetters(['calcuratedWeapon', 'buff'])
+    ...mapState(['bow', 'motions']),
+    ...mapGetters(['condition'])
   },
   methods: {
     calcurate() {
       // TODO: add validate
-      const weapon = {
-        attack: this.calcuratedWeapon.rawAttack,
-        affinity: this.calcuratedWeapon.affinity,
-        element: this.calcuratedWeapon.element,
-        sharpness: 'ammo'
-      }
-      const targetParam = {
-        physicalEffectiveness: this.wounder
-          ? this.target.ammo + Math.floor((100 - this.target.ammo) * 0.25)
-          : this.target.ammo,
-        elementalEffectiveness: this.bow.element
-          ? this.target[this.bow.element.type]
-          : null,
-        anger: this.anger
-      }
-      const buffParam = this.buff
+      const cond = this.condition
       this.results = this.motions.map((motion) => {
         const motionParam = {
           value: motion.value,
           elementRate: motion.elementRate
         }
-        const dmg = damage(weapon, targetParam, motionParam, buffParam)
+        cond.motion = motionParam
+        const dmg = damage(cond)
         return {
           motionName: motion.name,
-          damage: dmg,
-          count: motion.count
+          damage: Math.round(dmg * 100) / 100,
+          count: motion.count,
+          damageText: `${Math.round(dmg * 100) / 100} × ${motion.count}`,
+          total: Math.round(dmg * motion.count * 100) / 100
         }
       })
     }
   }
 }
 </script>
+
+<style>
+.v-data-table-header-mobile {
+  display: none;
+}
+.result-table {
+  width: 100%;
+}
+</style>

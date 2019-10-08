@@ -83,6 +83,12 @@ export default {
       return this.$store.state.bow
     }
   },
+  mounted() {
+    if (!this.monster) {
+      this.monster = monsters[0]
+      this.target = monsters[0].parts[0]
+    }
+  },
   methods: {
     displayPartName(item) {
       // 武器が選択されていれば、属性も表示

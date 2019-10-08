@@ -5,7 +5,8 @@ const bows = [
     affinity: 15,
     element: {
       type: 'thunder',
-      value: 330
+      value: 330,
+      hidden: false
     },
     coating: {
       crossRange: true,
@@ -20,7 +21,8 @@ const bows = [
     affinity: 0,
     element: {
       type: 'ice',
-      value: 450
+      value: 450,
+      hidden: false
     },
     coating: {
       crossRange: true,
@@ -35,7 +37,8 @@ const bows = [
     affinity: 0,
     element: {
       type: 'dragon',
-      value: 480
+      value: 480,
+      hidden: false
     },
     coating: {
       crossRange: true,

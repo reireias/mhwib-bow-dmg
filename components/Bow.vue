@@ -29,6 +29,11 @@ export default {
       }
     }
   },
+  mounted() {
+    if (!this.bow) {
+      this.bow = bows[0]
+    }
+  },
   methods: {
     displayName(bow) {
       const elementName = elementNameMap[bow.element.type]
