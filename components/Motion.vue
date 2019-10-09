@@ -4,25 +4,29 @@
       <h1>モーション</h1>
     </v-row>
     <v-row>
-      <v-col v-for="motion in motions" :key="motion.name" cols="6" md="3">
-        <v-btn @click="addMotion(motion)"
-          >{{ motion.name }}
-          <div class="motion-description">
-            &nbsp;[{{ motion.description }}]
-          </div></v-btn
-        >
+      <v-col>
+        <v-select
+          v-model="selectedMotion"
+          :items="motions"
+          :item-text="motionDescription"
+          item-value="name"
+          :value="motions[7]"
+          return-object
+        ></v-select>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col v-for="(selected, index) in selectedMotions" :key="index">
-        <v-chip close @click:close="deleteMotion(index)">{{
-          selected.name
-        }}</v-chip>
-      </v-col>
-    </v-row>
-    <v-row justify="center">
-      <v-btn @click="reset">リセット</v-btn>
-    </v-row>
+    <template v-if="multiMode">
+      <v-row>
+        <v-col v-for="(selected, index) in selectedMotions" :key="index">
+          <v-chip close @click:close="deleteMotion(index)">{{
+            selected.name
+          }}</v-chip>
+        </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-btn @click="reset">リセット</v-btn>
+      </v-row>
+    </template>
   </v-container>
 </template>
 
@@ -33,10 +37,19 @@ import motions from '@/constants/motion'
 export default {
   data() {
     return {
-      motions
+      motions,
+      multiMode: false
     }
   },
   computed: {
+    selectedMotion: {
+      get() {
+        return this.$store.state.motions[0]
+      },
+      set(value) {
+        this.setMotions([value])
+      }
+    },
     selectedMotions: {
       get() {
         return this.$store.state.motions
@@ -52,6 +65,9 @@ export default {
     }
   },
   methods: {
+    motionDescription(item) {
+      return `${item.name} [${item.description}]`
+    },
     addMotion(motion) {
       this.selectedMotions = [...this.selectedMotions, motion]
     },
