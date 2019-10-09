@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { damage } from 'mhwdmg'
+import { damageDetail } from 'mhwdmg'
 import { mapState, mapGetters } from 'vuex'
 
 export default {
@@ -47,15 +47,21 @@ export default {
           elementRate: motion.elementRate
         }
         cond.motion = motionParam
-        const dmg = damage(cond)
+        const detail = damageDetail(cond)
+        const expected = detail.expected.physical + detail.expected.elemental
         return {
           motionName: motion.name,
-          damage: Math.round(dmg * 100) / 100,
           count: motion.count,
-          damageText: `${Math.round(dmg * 100) / 100} × ${motion.count}`,
-          total: Math.round(dmg * motion.count * 100) / 100
+          expected: this.round(expected),
+          damageText: `${this.round(expected)} × ${motion.count}`,
+          physical: this.round(detail.expected.physical),
+          elemental: this.round(detail.expected.elemental),
+          total: Math.round(expected * motion.count * 100) / 100
         }
       })
+    },
+    round(value) {
+      return Math.round(value * 100) / 100
     }
   }
 }

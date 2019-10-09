@@ -6491,9 +6491,9 @@ methods@~1.1.2:
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 mhwdmg@>=0.0.1:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/mhwdmg/-/mhwdmg-0.3.0.tgz#4d2d71c91d9497fde53db4588103db58dd75da7c"
-  integrity sha512-TqcD4Pp91B7AInmssWISR/UebgVhPB9+qqbQJXSg8u9JP22pffGxcG4gMJJutCsrNQzFIWCFWDsSquxLGvdU/A==
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/mhwdmg/-/mhwdmg-0.4.0.tgz#25a5966cb2811e8c08186a0913353cb35c392806"
+  integrity sha512-3nNbnqgH6Id0R4XcIAOC5O9t62fZApMqQhMSwhXaUmXHRunBJU1VtiuvcBJXfdxJpImT9gQ99Q87BQm0Qie+JQ==
 
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
