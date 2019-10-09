@@ -1,7 +1,7 @@
 {
   "name": "mhwib-bow-dmg",
   "version": "0.0.1",
-  "description": "TODO",
+  "description": "MHW:Iceborneの弓専用ダメージ計算機",
   "author": "reireias",
   "private": true,
   "scripts": {
