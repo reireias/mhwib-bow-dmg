@@ -4,11 +4,15 @@
       <h1>武器</h1>
     </v-row>
     <v-row>
-      <bow></bow>
+      <v-col>
+        <bow></bow>
+      </v-col>
     </v-row>
     <customs></customs>
     <v-row>
-      <parts></parts>
+      <v-col>
+        <parts></parts>
+      </v-col>
     </v-row>
     <v-row>
       <v-col>

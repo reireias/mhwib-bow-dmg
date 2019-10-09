@@ -4,13 +4,15 @@
       <h1>バフ</h1>
     </v-row>
     <v-row>
-      <v-select
-        v-model="coating"
-        :items="coatings"
-        :item-text="coatingDisplay"
-        label="ビン"
-        clearable
-      ></v-select>
+      <v-col>
+        <v-select
+          v-model="coating"
+          :items="coatings"
+          :item-text="coatingDisplay"
+          label="ビン"
+          clearable
+        ></v-select>
+      </v-col>
     </v-row>
     <v-row>
       <v-col class="buff-col">
