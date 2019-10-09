@@ -53,7 +53,10 @@ export default {
    */
   modules: ['@nuxtjs/google-analytics'],
   googleAnalytics: {
-    id: 'UA-149343004-2'
+    id: 'UA-149343004-2',
+    debug: {
+      sendHitTask: true
+    }
   },
   /*
    ** vuetify module configuration
