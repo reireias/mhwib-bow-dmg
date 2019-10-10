@@ -3,17 +3,27 @@
     v-model="bow"
     label="弓"
     :items="bows"
-    :item-text="displayName"
+    item-text="name"
     return-object
-  ></v-select>
+  >
+    <template slot="selection" slot-scope="data">
+      <bow-detail :bow="data.item"></bow-detail>
+    </template>
+    <template slot="item" slot-scope="data">
+      <bow-detail :bow="data.item"></bow-detail>
+    </template>
+  </v-select>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
+import BowDetail from '@/components/BowDetail'
 import bows from '@/constants/bow'
-import { elementNameMap } from '@/constants/element'
 
 export default {
+  components: {
+    BowDetail
+  },
   data() {
     return {
       bows
@@ -35,14 +45,6 @@ export default {
     }
   },
   methods: {
-    displayName(bow) {
-      const elementName = elementNameMap[bow.element.type]
-      if (bow.affinity === 0) {
-        return `${bow.name} [ ${bow.attack}, ${elementName}${bow.element.value} ]`
-      } else {
-        return `${bow.name} [ ${bow.attack}, ${elementName}${bow.element.value}, ${bow.affinity}% ]`
-      }
-    },
     ...mapActions(['setBow'])
   }
 }
