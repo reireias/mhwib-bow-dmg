@@ -8,7 +8,7 @@
     <v-row justify="center">
       <v-col>
         <center>
-          <v-btn color="primary" large @click="calcurate">計算</v-btn>
+          <v-btn color="secondary" large @click="calcurate">計算</v-btn>
         </center>
       </v-col>
     </v-row>

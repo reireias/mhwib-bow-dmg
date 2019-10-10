@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <div class="display-1 primary--text">弓専用ダメージ計算機</div>
+      <div class="display-1 secondary--text">弓専用ダメージ計算機</div>
     </v-row>
     <v-row>
       <weapon></weapon>
