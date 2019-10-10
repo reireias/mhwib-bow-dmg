@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <h1>スキル</h1>
+      <v-col>
+        <div class="headline">スキル</div>
+      </v-col>
     </v-row>
     <v-row>
       <v-col cols="4" md="2">
@@ -10,6 +12,7 @@
           :items="skills.attackBoost"
           :item-text="displaySkill"
           label="攻撃"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -18,6 +21,7 @@
           :items="skills.criticalEye"
           :item-text="displaySkill"
           label="見切り"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -26,6 +30,7 @@
           :items="skills.weaknessExploit"
           :item-text="displaySkill"
           label="弱点特効"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -34,6 +39,7 @@
           :items="skills.criticalBoost"
           :item-text="displaySkill"
           label="超会心"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -42,6 +48,7 @@
           :items="skills.agitator"
           :item-text="displaySkill"
           label="挑戦者"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -50,6 +57,7 @@
           :items="skills.peakPerformance"
           :item-text="displaySkill"
           label="フルチャージ"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -58,6 +66,7 @@
           :items="skills.latentPower"
           :item-text="displaySkill"
           label="力の解放"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -66,6 +75,7 @@
           :items="skills.fortify"
           :item-text="displaySkill"
           label="不屈"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -74,6 +84,7 @@
           :items="skills.elementAttack"
           :item-text="displaySkill"
           label="属性強化"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -82,6 +93,7 @@
           :items="skills.freeElem"
           :item-text="displaySkill"
           label="属性解放"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -90,6 +102,7 @@
           :items="skills.criticalElement"
           :item-text="displaySkill"
           label="会心撃【属性】"
+          clearable
         ></v-select>
       </v-col>
       <v-col cols="4" md="2">
@@ -98,6 +111,7 @@
           :items="skills.elementBoost"
           :item-text="displaySkill"
           label="属性加速"
+          clearable
         ></v-select>
       </v-col>
     </v-row>

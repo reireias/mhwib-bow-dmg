@@ -1,23 +1,28 @@
 <template>
   <v-container>
-    <v-row>
-      <h1>弓専用ダメージ計算機(仮)</h1>
+    <v-row justify="center">
+      <div class="display-1 primary--text">弓専用ダメージ計算機</div>
     </v-row>
     <v-row>
       <weapon></weapon>
     </v-row>
+    <v-divider></v-divider>
     <v-row>
       <buff></buff>
     </v-row>
+    <v-divider></v-divider>
     <v-row>
       <skill></skill>
     </v-row>
+    <v-divider></v-divider>
     <v-row>
       <motion></motion>
     </v-row>
+    <v-divider></v-divider>
     <v-row>
       <target></target>
     </v-row>
+    <v-divider></v-divider>
     <v-row>
       <result></result>
     </v-row>

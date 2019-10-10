@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <h1>武器</h1>
+      <v-col>
+        <div class="headline">武器</div>
+      </v-col>
     </v-row>
     <v-row>
       <v-col>

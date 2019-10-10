@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <h1>モーション</h1>
+      <v-col>
+        <div class="headline">モーション</div>
+      </v-col>
     </v-row>
     <v-row>
       <v-col>

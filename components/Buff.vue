@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <h1>バフ</h1>
+      <v-col>
+        <div class="headline">バフ</div>
+      </v-col>
     </v-row>
     <v-row>
       <v-col>

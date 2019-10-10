@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <h1>ターゲット</h1>
+      <v-col>
+        <div class="headline">ターゲット</div>
+      </v-col>
     </v-row>
     <v-row>
       <v-col cols="6" sm="3">
