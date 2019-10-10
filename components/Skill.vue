@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="attackBoost"
           :items="skills.attackBoost"
@@ -15,7 +15,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="criticalEye"
           :items="skills.criticalEye"
@@ -24,7 +24,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="weaknessExploit"
           :items="skills.weaknessExploit"
@@ -33,7 +33,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="criticalBoost"
           :items="skills.criticalBoost"
@@ -42,7 +42,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="agitator"
           :items="skills.agitator"
@@ -51,7 +51,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="peakPerformance"
           :items="skills.peakPerformance"
@@ -60,7 +60,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="latentPower"
           :items="skills.latentPower"
@@ -69,7 +69,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="fortify"
           :items="skills.fortify"
@@ -78,7 +78,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="elementAttack"
           :items="skills.elementAttack"
@@ -87,7 +87,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="freeElem"
           :items="skills.freeElem"
@@ -96,7 +96,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="criticalElement"
           :items="skills.criticalElement"
@@ -105,7 +105,7 @@
           clearable
         ></v-select>
       </v-col>
-      <v-col cols="4" md="2">
+      <v-col cols="6" sm="4" md="2">
         <v-select
           v-model="elementBoost"
           :items="skills.elementBoost"
