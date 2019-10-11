@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center">
+      <div class="title secondary--text">MHW:Iceborne</div>
       <div class="display-1 secondary--text">弓専用ダメージ計算機</div>
     </v-row>
     <v-row>
