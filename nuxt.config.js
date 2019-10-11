@@ -49,7 +49,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://reireias.github.io/mhwib-bow-dmg/favicon.ico'
+        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png'
       },
       {
         hid: 'twitter:card',
@@ -74,7 +74,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://reireias.github.io/mhwib-bow-dmg/favicon.ico'
+        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }]
