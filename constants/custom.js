@@ -23,13 +23,13 @@ const customs = {
   },
   11: {
     attack: attack.slice(0, 2),
-    affinity: affinity.slice(0, 2),
+    affinity,
     element: element.slice(0, 3)
   },
   12: {
-    attack: attack.slice(0, 1),
+    attack: attack.slice(0, 2),
     affinity: affinity.slice(0, 2),
-    element: element.slice(0, 2)
+    element: element.slice(0, 3)
   }
 }
 
