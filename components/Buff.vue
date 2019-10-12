@@ -34,7 +34,7 @@
       <v-col class="buff-col">
         <v-checkbox
           v-model="demonPowder"
-          label="鬼人の粉塵(+10)"
+          label="粉塵(+10)"
           color="primary"
         ></v-checkbox>
       </v-col>

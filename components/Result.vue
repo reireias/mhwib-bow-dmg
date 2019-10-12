@@ -13,16 +13,32 @@
       </v-col>
     </v-row>
     <v-fade-transition>
-      <v-row v-if="results.length">
-        <client-only>
-          <v-data-table
-            class="result-table"
-            :headers="headers"
-            :items="results"
-            hide-default-footer
-          ></v-data-table>
-        </client-only>
-      </v-row>
+      <div v-if="results.length">
+        <v-row>
+          <v-col>
+            <v-checkbox
+              v-model="showText"
+              color="primary"
+              label="テキストで結果を表示"
+            ></v-checkbox>
+          </v-col>
+        </v-row>
+        <v-row v-if="!showText">
+          <client-only>
+            <v-data-table
+              class="result-table"
+              :headers="headers"
+              :items="results"
+              hide-default-footer
+            ></v-data-table>
+          </client-only>
+        </v-row>
+        <v-row v-else>
+          <v-col>
+            <result-text :result="results[0]"></result-text>
+          </v-col>
+        </v-row>
+      </div>
     </v-fade-transition>
     <v-row v-if="results.length == 0">
       <v-col>
@@ -35,10 +51,15 @@
 <script>
 import { damageDetail } from 'mhwdmg'
 import { mapState, mapGetters } from 'vuex'
+import ResultText from '@/components/ResultText'
 
 export default {
+  components: {
+    ResultText
+  },
   data() {
     return {
+      showText: false,
       results: [],
       headers: [
         { text: 'モーション', value: 'motion', sortable: false },
@@ -46,7 +67,8 @@ export default {
         { text: '会心時', value: 'critical', sortable: false },
         { text: '期待値', value: 'expected', sortable: false },
         { text: '期待値合計', value: 'total', sortable: false }
-      ]
+      ],
+      resltText: ''
     }
   },
   computed: {
@@ -69,8 +91,10 @@ export default {
           motion: `${motion.name} [${motion.description}]`,
           base: `物理: ${detail.base.physical}, 属性: ${detail.base.elemental}`,
           critical: `物理: ${detail.critical.physical}, 属性: ${detail.critical.elemental}`,
-          expected: `物理: ${detail.expected.physical}, 属性: ${detail.expected.elemental}`,
-          total: Math.round(expected * motion.count * 100) / 100
+          expected: `物理: ${this.round(
+            detail.expected.physical
+          )}, 属性: ${this.round(detail.expected.elemental)}`,
+          total: this.round(expected * motion.count)
         }
       })
     },

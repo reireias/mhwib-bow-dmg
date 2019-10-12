@@ -70,7 +70,7 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"鬼人の粉塵(+10)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"粉塵(+10)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
