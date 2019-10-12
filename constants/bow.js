@@ -13,7 +13,8 @@ const bows = [
       power: true
     },
     rare: 12,
-    parts: false
+    parts: false,
+    slot: '①'
   },
   {
     name: 'ディノアローⅡ',
@@ -29,7 +30,8 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true
+    parts: true,
+    slot: '①①'
   },
   {
     name: '蛮顎竜ノ火矢Ⅱ',
@@ -45,7 +47,8 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true
+    parts: true,
+    slot: null
   },
   {
     name: 'ネロ・プラヌラ',
@@ -61,7 +64,8 @@ const bows = [
       power: true
     },
     rare: 12,
-    parts: false
+    parts: false,
+    slot: '①'
   },
   {
     name: 'ワイズハンターボウⅢ',
@@ -77,7 +81,8 @@ const bows = [
       power: false
     },
     rare: 11,
-    parts: true
+    parts: true,
+    slot: '③'
   },
   {
     name: 'ラグーナシュートⅡ',
@@ -93,7 +98,8 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true
+    parts: true,
+    slot: '②①'
   },
   {
     name: '王牙弓【稚雷】',
@@ -109,7 +115,8 @@ const bows = [
       power: true
     },
     rare: 12,
-    parts: false
+    parts: false,
+    slot: '②'
   },
   {
     name: '万雷弓【羽々矢】',
@@ -125,7 +132,8 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true
+    parts: true,
+    slot: '①'
   },
   {
     name: '氷妖イヴェリア',
@@ -141,7 +149,8 @@ const bows = [
       power: true
     },
     rare: 12,
-    parts: false
+    parts: false,
+    slot: '④'
   },
   {
     name: 'ミスト＝グレイシア',
@@ -157,7 +166,8 @@ const bows = [
       power: true
     },
     rare: 11,
-    parts: false
+    parts: false,
+    slot: '①'
   },
   {
     name: 'アイシクルブリザードⅡ',
@@ -173,7 +183,8 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true
+    parts: true,
+    slot: '①'
   },
   {
     name: '屍弓ヴァルヴェロス',
@@ -189,7 +200,8 @@ const bows = [
       power: false
     },
     rare: 11,
-    parts: true
+    parts: true,
+    slot: '②①'
   },
   {
     name: '龍封じの古弓Ⅱ',
@@ -205,7 +217,8 @@ const bows = [
       power: false
     },
     rare: 11,
-    parts: true
+    parts: true,
+    slot: '①①'
   }
 ]
 

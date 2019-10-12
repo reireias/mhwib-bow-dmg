@@ -1,8 +1,8 @@
 <template>
   <div>
-    {{ bow.name }} [{{ bow.attack }},
+    {{ bow.name }} [ {{ bow.attack }},
     <span :class="bow.element.type">{{ element }}</span>
-    {{ affinity }}]
+    {{ affinity }}{{ slot }} ]
   </div>
 </template>
 
@@ -26,6 +26,9 @@ export default {
         this.bow.element.value
       }`
       return this.bow.element.hidden ? `(${str})` : str
+    },
+    slot() {
+      return this.bow.slot ? `, ${this.bow.slot}` : ''
     }
   }
 }
