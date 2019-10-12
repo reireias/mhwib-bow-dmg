@@ -38,6 +38,9 @@ export const mutations = {
       this.replaceState(loaded)
     }
   },
+  setState(_, newState) {
+    this.replaceState(newState)
+  },
   setBow(state, bow) {
     state.bow = bow
     saveLocal(state)
@@ -91,6 +94,9 @@ export const mutations = {
 export const actions = {
   loadLocal({ commit }, payload) {
     commit('loadLocal', payload)
+  },
+  setState({ commit }, payload) {
+    commit('setState', payload)
   },
   setBow({ commit }, payload) {
     commit('setBow', payload)

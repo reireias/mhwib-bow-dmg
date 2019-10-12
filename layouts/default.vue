@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <template v-if="show">
-      <nuxt></nuxt>
+      <v-content>
+        <nuxt></nuxt>
+      </v-content>
     </template>
     <template v-else>
       <div style="height: 100%; display: table">
