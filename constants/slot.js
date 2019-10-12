@@ -9,7 +9,7 @@ export const slotMap = {
 }
 
 export const rareSlotMap = {
-  10: 7,
-  11: 5,
-  12: 4
+  10: 9,
+  11: 6,
+  12: 5
 }
