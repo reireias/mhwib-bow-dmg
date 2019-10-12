@@ -32,8 +32,11 @@ const saveLocal = (state) => {
 
 export const mutations = {
   loadLocal() {
-    const loaded = JSON.parse(localStorage.getItem(KEY))
-    this.replaceState(loaded)
+    const json = localStorage.getItem(KEY)
+    if (json) {
+      const loaded = JSON.parse(json)
+      this.replaceState(loaded)
+    }
   },
   setBow(state, bow) {
     state.bow = bow
