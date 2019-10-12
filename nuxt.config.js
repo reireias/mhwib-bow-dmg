@@ -103,6 +103,11 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa', '@nuxtjs/google-analytics'],
+  pwa: {
+    workbox: {
+      routerBase: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/mhwib-bow-dmg' : '/'
+    }
+  },
   googleAnalytics: {
     id: 'UA-149343004-2',
     debug: {
