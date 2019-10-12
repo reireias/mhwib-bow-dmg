@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
 
-export const createStore = (getters = null) => {
+export const createStore = (getters = null, actions = null) => {
   return new Vuex.Store({
     state: {
       bow: null,
@@ -24,6 +24,7 @@ export const createStore = (getters = null) => {
       target: null,
       wounded: true
     },
+    actions,
     getters
   })
 }

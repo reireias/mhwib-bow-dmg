@@ -39,11 +39,6 @@ export default {
       }
     }
   },
-  mounted() {
-    if (!this.bow) {
-      this.bow = bows[0]
-    }
-  },
   methods: {
     ...mapActions(['setBow'])
   }

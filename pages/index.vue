@@ -51,6 +51,9 @@ export default {
   },
   data() {
     return { show: false }
+  },
+  beforeCreate() {
+    this.$store.dispatch('loadLocal')
   }
 }
 </script>

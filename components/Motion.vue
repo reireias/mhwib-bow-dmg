@@ -61,11 +61,6 @@ export default {
       }
     }
   },
-  mounted() {
-    if (!this.selectedMotions.length) {
-      this.addMotion(motions[7])
-    }
-  },
   methods: {
     motionDescription(item) {
       return `${item.name} [${item.description}]`

@@ -1,5 +1,9 @@
+import { defaultState } from '@/constants/default'
+
+const KEY = 'state'
+
 export const state = () => ({
-  bow: null,
+  bow: defaultState.bow,
   custom: { attack: null, affinity: null, element: null },
   parts: null,
   buff: {
@@ -15,53 +19,76 @@ export const state = () => ({
     weaknessExploit: 3,
     elementAttack: 6
   },
-  motions: [],
-  monster: null,
-  target: null,
+  motions: defaultState.motions,
+  monster: defaultState.monster,
+  target: defaultState.target,
   anger: true,
   wounded: true
 })
 
+const saveLocal = (state) => {
+  localStorage.setItem(KEY, JSON.stringify(state))
+}
+
 export const mutations = {
+  loadLocal() {
+    const loaded = JSON.parse(localStorage.getItem(KEY))
+    this.replaceState(loaded)
+  },
   setBow(state, bow) {
     state.bow = bow
+    saveLocal(state)
   },
   setCustomAttack(state, attack) {
     state.custom.attack = attack
+    saveLocal(state)
   },
   setCustomAffinity(state, affinity) {
     state.custom.affinity = affinity
+    saveLocal(state)
   },
   setCustomElement(state, element) {
     state.custom.element = element
+    saveLocal(state)
   },
   setParts(state, parts) {
     state.parts = parts
+    saveLocal(state)
   },
   setBuff(state, buff) {
     state.buff = Object.assign({}, state.buff, buff)
+    saveLocal(state)
   },
   setSkill(state, skill) {
     state.skill = Object.assign({}, state.skill, skill)
+    saveLocal(state)
   },
   setMotions(state, motions) {
     state.motions = motions
+    saveLocal(state)
   },
   setMonster(state, monster) {
     state.monster = monster
+    saveLocal(state)
   },
   setTarget(state, target) {
     state.target = target
+    saveLocal(state)
   },
   setAnger(state, anger) {
     state.anger = anger
+    saveLocal(state)
   },
   setWounded(state, wounded) {
     state.wounded = wounded
+    saveLocal(state)
   }
 }
 
 export const actions = {
+  loadLocal({ commit }, payload) {
+    commit('loadLocal', payload)
+  },
   setBow({ commit }, payload) {
     commit('setBow', payload)
   },
