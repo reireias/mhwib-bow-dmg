@@ -132,7 +132,7 @@ const bows = [
       power: true
     },
     rare: 10,
-    parts: true,
+    parts: false,
     slot: '①'
   },
   {
