@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`instance should be vue instance 1`] = `
-"<v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"弓\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+"<v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"[object Object]\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"弓\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {

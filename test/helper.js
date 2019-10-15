@@ -1,9 +1,12 @@
 import Vuex from 'vuex'
+import bows from '@/constants/bow'
+import motions from '@/constants/motion'
+import monsters from '@/constants/monster'
 
 export const createStore = (getters = null, actions = null) => {
   return new Vuex.Store({
     state: {
-      bow: null,
+      bow: bows[0],
       custom: { attack: null, affinity: null, element: null },
       parts: null,
       buff: {
@@ -19,12 +22,24 @@ export const createStore = (getters = null, actions = null) => {
         weaknessExploit: 3,
         elementAttack: 6
       },
-      motions: [],
-      monster: null,
-      target: null,
+      motions: [motions[0]],
+      monster: monsters[0],
+      target: monsters[0].parts[0],
       wounded: true
     },
     actions,
     getters
   })
+}
+
+export const buildResult = () => {
+  return {
+    id: '00000000001',
+    bow: 'bow name',
+    motion: 'name [10x5, 1.0]',
+    base: '物理: 10, 属性: 10',
+    critical: '物理: 20, 属性: 20',
+    expected: '物理: 15, 属性: 15',
+    total: '75'
+  }
 }
