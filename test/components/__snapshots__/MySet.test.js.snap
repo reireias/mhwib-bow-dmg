@@ -1,15 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`instance should be vue instance 1`] = `
-"<v-container-stub tag=\\"div\\"><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">セーブ</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><p>現在の設定をブラウザに保存します。</p></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub cols=\\"9\\" tag=\\"div\\"><v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"v => {
-        /* istanbul ignore next */
-        cov_dikznfxc7.f[1]++;
-        cov_dikznfxc7.s[6]++;
-        return (
-          /* istanbul ignore next */
-          (cov_dikznfxc7.b[0][0]++, v.length > 0) ||
-          /* istanbul ignore next */
-          (cov_dikznfxc7.b[0][1]++, 'マイセット名は空にはできません')
-        );
-      }\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"マイセット名\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\"></v-text-field-stub></v-col-stub> <v-col-stub cols=\\"3\\" tag=\\"div\\"><v-btn-stub color=\\"secondary\\" tag=\\"button\\" activeclass=\\"\\" disabled=\\"true\\" type=\\"button\\">セーブ</v-btn-stub></v-col-stub></v-row-stub> <v-divider-stub></v-divider-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">ロード</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><p>保存済みの設定をロードします。</p></v-col-stub></v-row-stub> <span name=\\"myset\\"></span> <v-snackbar-stub timeout=\\"6000\\">マイセットをセーブしました。</v-snackbar-stub> <v-snackbar-stub timeout=\\"6000\\">マイセットをロードしました。</v-snackbar-stub> <v-snackbar-stub timeout=\\"6000\\">マイセットを削除しました。</v-snackbar-stub></v-container-stub>"
-`;
+exports[`instance should be vue instance 1`] = `"<v-container-stub tag=\\"div\\"><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">セーブ</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><p>現在の設定をブラウザに保存します。</p></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub cols=\\"9\\" tag=\\"div\\"><v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"function () { [native code] }\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"マイセット名\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\"></v-text-field-stub></v-col-stub> <v-col-stub cols=\\"3\\" tag=\\"div\\"><v-btn-stub color=\\"secondary\\" tag=\\"button\\" activeclass=\\"\\" disabled=\\"true\\" type=\\"button\\">セーブ</v-btn-stub></v-col-stub></v-row-stub> <v-divider-stub></v-divider-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">ロード</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><p>保存済みの設定をロードします。</p></v-col-stub></v-row-stub> <span name=\\"myset\\"></span> <v-snackbar-stub timeout=\\"6000\\">マイセットをセーブしました。</v-snackbar-stub> <v-snackbar-stub timeout=\\"6000\\">マイセットをロードしました。</v-snackbar-stub> <v-snackbar-stub timeout=\\"6000\\">マイセットを削除しました。</v-snackbar-stub></v-container-stub>"`;

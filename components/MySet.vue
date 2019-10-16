@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       name: '',
-      rules: [(v) => v.length > 0 || 'マイセット名は空にはできません'],
+      rules: [this.validateName],
       saved: false,
       loaded: false,
       removed: false,
@@ -75,6 +75,9 @@ export default {
     }
   },
   methods: {
+    validateName(name) {
+      return name.length > 0 || 'マイセット名は空にはできません'
+    },
     save() {
       const key = this.getKey()
       this.mySetKeys.unshift({ key, name: this.name })
