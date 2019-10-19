@@ -27,3 +27,21 @@ describe('instance', () => {
     expect(wrapper.html()).toMatchSnapshot()
   })
 })
+
+describe('displayPartName', () => {
+  test('no element', () => {
+    const methodThis = {}
+    const item = { name: '部位名', ammo: 100 }
+    expect(target.methods.displayPartName.call(methodThis, item)).toBe(
+      '部位名 [弾100]'
+    )
+  })
+
+  test('element', () => {
+    const methodThis = { bow: { element: { type: 'fire' } } }
+    const item = { name: '部位名', ammo: 100, fire: 50 }
+    expect(target.methods.displayPartName.call(methodThis, item)).toBe(
+      '部位名 [弾100, 火50]'
+    )
+  })
+})

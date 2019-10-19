@@ -3,7 +3,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Vuetify from 'vuetify'
 import target from '@/components/Skill'
-import { createStore } from '@/test/helper'
+import { createStore, createFullSkillStore } from '@/test/helper'
 
 Vue.use(Vuetify)
 const localVue = createLocalVue()
@@ -15,6 +15,21 @@ describe('instance', () => {
   beforeEach(() => {
     store = createStore()
   })
+
+  it('should be vue instance', () => {
+    const vuetify = new Vuetify()
+    const wrapper = shallowMount(target, {
+      localVue,
+      store,
+      vuetify
+    })
+    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+})
+
+describe('fll skill', () => {
+  const store = createFullSkillStore()
 
   it('should be vue instance', () => {
     const vuetify = new Vuetify()
