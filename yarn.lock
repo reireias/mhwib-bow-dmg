@@ -6497,10 +6497,10 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-mhwdmg@>=0.0.1:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/mhwdmg/-/mhwdmg-0.4.3.tgz#d3a528cefa82a48020ae74280fccc48af3b429ba"
-  integrity sha512-z5yek0fOmTtxaW+cOednRWCH2yetQsztzQ2rkhYQfklOi9tlGO7XQzL1B0LJQJFO7XM8hZUC+5lhaAqN6H0GSg==
+mhwdmg@>=0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/mhwdmg/-/mhwdmg-0.4.4.tgz#d7324a425ba1ba7a79692b5704b9d1088f0b7b1f"
+  integrity sha512-h/wkMjpZiMMfvMWDRATdgFUEMzniL9tMrJyqyK/18RJwTIdwxRcRdJHtdv5XtvXQkAKWXD+AxdRVD6tlelsL+Q==
 
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"

@@ -19,7 +19,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^2.6.0",
-    "mhwdmg": ">=0.0.1",
+    "mhwdmg": ">=0.4.4",
     "nuxt": "^2.9.2",
     "vuetify": "^2.1.3"
   },
