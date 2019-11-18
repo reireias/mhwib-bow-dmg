@@ -8,4 +8,7 @@ export const demonDrugs = [
   { name: '鬼人薬G', value: 7 }
 ]
 
-export const seeds = [{ name: '種', value: 10 }, { name: '丸薬', value: 25 }]
+export const seeds = [
+  { name: '種', value: 10 },
+  { name: '丸薬', value: 25 }
+]
