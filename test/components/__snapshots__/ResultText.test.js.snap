@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`instance should be vue instance 1`] = `
-"<div><v-textarea-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"武器：銀火竜の烈弓
+"<div>
+  <v-textarea-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"武器：銀火竜の烈弓
 カスタム：なし
 バフ：護符、爪、粉塵、食事大、種
 スキル：弱点特効3、属性強化6
@@ -12,5 +13,10 @@ exports[`instance should be vue instance 1`] = `
 通常時：物理: 10, 属性: 10
 会心時：物理: 20, 属性: 20
 期待値：物理: 15, 属性: 15
-合計：75\\" backgroundcolor=\\"\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" autogrow=\\"true\\" rowheight=\\"24\\" rows=\\"5\\"></v-textarea-stub> <center><v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">コピー</v-btn-stub></center> <v-snackbar-stub timeout=\\"6000\\">コピーしました</v-snackbar-stub></div>"
+合計：75\\" backgroundcolor=\\"\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" autogrow=\\"true\\" rowheight=\\"24\\" rows=\\"5\\"></v-textarea-stub>
+  <center>
+    <v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">コピー</v-btn-stub>
+  </center>
+  <v-snackbar-stub timeout=\\"6000\\">コピーしました</v-snackbar-stub>
+</div>"
 `;

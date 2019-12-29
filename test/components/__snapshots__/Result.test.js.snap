@@ -1,3 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`instance should be vue instance 1`] = `"<v-container-stub tag=\\"div\\"><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">結果</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\" justify=\\"center\\"><v-col-stub tag=\\"div\\"><center><v-btn-stub color=\\"secondary\\" tag=\\"button\\" activeclass=\\"\\" large=\\"true\\" type=\\"button\\">計算</v-btn-stub></center></v-col-stub></v-row-stub> <v-fade-transition-stub origin=\\"top center 0\\"><!----></v-fade-transition-stub> <!----> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div style=\\"height: 240px;\\"></div></v-col-stub></v-row-stub></v-container-stub>"`;
+exports[`instance should be vue instance 1`] = `
+"<v-container-stub tag=\\"div\\">
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <div class=\\"headline\\">結果</div>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\" justify=\\"center\\">
+    <v-col-stub tag=\\"div\\">
+      <center>
+        <v-btn-stub color=\\"secondary\\" tag=\\"button\\" activeclass=\\"\\" large=\\"true\\" type=\\"button\\">計算</v-btn-stub>
+      </center>
+    </v-col-stub>
+  </v-row-stub>
+  <v-fade-transition-stub origin=\\"top center 0\\">
+    <!---->
+  </v-fade-transition-stub>
+  <!---->
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <div style=\\"height: 240px;\\"></div>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>"
+`;
