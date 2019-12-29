@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`instance should be vue instance 1`] = `
-"<v-container-stub tag=\\"div\\"><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><div class=\\"headline\\">バフ</div></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"ビン\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+"<v-container-stub tag=\\"div\\">
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <div class=\\"headline\\">バフ</div>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"ビン\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -24,7 +32,12 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"護符(+6)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" backgroundcolor=\\"\\" label=\\"護符(+6)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -47,7 +60,10 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"爪(+9)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" inputvalue=\\"true\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub>
+    </v-col-stub>
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" backgroundcolor=\\"\\" label=\\"爪(+9)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -70,7 +86,10 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"true\\" backgroundcolor=\\"\\" label=\\"粉塵(+10)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" inputvalue=\\"true\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub>
+    </v-col-stub>
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-checkbox-stub color=\\"primary\\" errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" backgroundcolor=\\"\\" label=\\"粉塵(+10)\\" ripple=\\"true\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -93,7 +112,12 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"15\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"食事\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" inputvalue=\\"true\\" indeterminateicon=\\"$checkboxIndeterminate\\" officon=\\"$checkboxOff\\" onicon=\\"$checkboxOn\\"></v-checkbox-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"15\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"食事\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -116,7 +140,10 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"鬼人薬\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub>
+    </v-col-stub>
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"鬼人薬\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -139,7 +166,10 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub> <v-col-stub tag=\\"div\\" class=\\"buff-col\\"><v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"10\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"種/丸薬\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub>
+    </v-col-stub>
+    <v-col-stub tag=\\"div\\" class=\\"buff-col\\">
+      <v-select-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"10\\" appendicon=\\"$dropdown\\" backgroundcolor=\\"\\" label=\\"種/丸薬\\" loaderheight=\\"2\\" clearable=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" valuecomparator=\\"function deepEqual(a, b) {
   if (a === b) return true;
 
   if (a instanceof Date &amp;&amp; b instanceof Date) {
@@ -162,5 +192,8 @@ exports[`instance should be vue instance 1`] = `
   return props.every(function (p) {
     return deepEqual(a[p], b[p]);
   });
-}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub></v-col-stub></v-row-stub></v-container-stub>"
+}\\" nodatatext=\\"$vuetify.noDataText\\" items=\\"[object Object],[object Object]\\" itemcolor=\\"primary\\" itemdisabled=\\"disabled\\" itemtext=\\"function () { [native code] }\\" itemvalue=\\"value\\" menuprops=\\"[object Object]\\"></v-select-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>"
 `;
