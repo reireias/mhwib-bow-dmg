@@ -7,10 +7,10 @@
     return-object
   >
     <template slot="selection" slot-scope="data">
-      <bow-detail :bow="data.item"></bow-detail>
+      <bow-detail v-if="data" :bow="data.item"></bow-detail>
     </template>
     <template slot="item" slot-scope="data">
-      <bow-detail :bow="data.item"></bow-detail>
+      <bow-detail v-if="data" :bow="data.item"></bow-detail>
     </template>
   </v-select>
 </template>
