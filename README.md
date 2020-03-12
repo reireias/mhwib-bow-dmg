@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/reireias/mhwib-bow-dmg.svg?branch=master)](https://travis-ci.org/reireias/mhwib-bow-dmg)
+![deploy](https://github.com/reireias/mhwib-bow-dmg/workflows/deploy/badge.svg) ![test](https://github.com/reireias/mhwib-bow-dmg/workflows/test/badge.svg)
 
 # mhwib-bow-dmg
 Damage calcurator for Bow in Monster Hunter World: Iceborne.
