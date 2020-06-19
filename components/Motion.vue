@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       motions,
-      multiMode: false
+      multiMode: false,
     }
   },
   computed: {
@@ -50,7 +50,7 @@ export default {
       },
       set(value) {
         this.setMotions([value])
-      }
+      },
     },
     selectedMotions: {
       get() {
@@ -58,8 +58,8 @@ export default {
       },
       set(value) {
         this.setMotions(value)
-      }
-    }
+      },
+    },
   },
   methods: {
     motionDescription(item) {
@@ -76,8 +76,8 @@ export default {
     reset() {
       this.selectedMotions = []
     },
-    ...mapActions(['setMotions'])
-  }
+    ...mapActions(['setMotions']),
+  },
 }
 </script>
 

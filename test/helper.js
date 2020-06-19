@@ -15,16 +15,16 @@ const baseState = () => {
       demonPowder: true,
       canteen: 15,
       demonDrug: null,
-      seed: 10
+      seed: 10,
     },
     skill: {
       weaknessExploit: 3,
-      elementAttack: 6
+      elementAttack: 6,
     },
     motions: [motions[0]],
     monster: monsters[0],
     target: monsters[0].parts[0],
-    wounded: true
+    wounded: true,
   }
 }
 
@@ -32,7 +32,7 @@ export const createStore = (getters = null, actions = null) => {
   return new Vuex.Store({
     state: baseState(),
     actions,
-    getters
+    getters,
   })
 }
 
@@ -50,7 +50,7 @@ export const createFullSkillStore = () => {
     elementAttack: 6,
     freeElem: 3,
     criticalElement: 2,
-    elementBoost: 2
+    elementBoost: 2,
   }
   return new Vuex.Store({ state })
 }
@@ -63,6 +63,6 @@ export const buildResult = () => {
     base: '物理: 10, 属性: 10',
     critical: '物理: 20, 属性: 20',
     expected: '物理: 15, 属性: 15',
-    total: '75'
+    total: '75',
   }
 }

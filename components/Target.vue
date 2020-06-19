@@ -42,7 +42,7 @@ import { elementNameMap } from '@/constants/element'
 export default {
   data() {
     return {
-      monsters
+      monsters,
     }
   },
   computed: {
@@ -52,7 +52,7 @@ export default {
       },
       set(value) {
         this.setMonster(value)
-      }
+      },
     },
     target: {
       get() {
@@ -60,7 +60,7 @@ export default {
       },
       set(value) {
         this.setTarget(value)
-      }
+      },
     },
     anger: {
       get() {
@@ -68,7 +68,7 @@ export default {
       },
       set(value) {
         this.setAnger(value)
-      }
+      },
     },
     wounded: {
       get() {
@@ -76,14 +76,14 @@ export default {
       },
       set(value) {
         this.setWounded(value)
-      }
+      },
     },
     parts() {
       return this.monster ? this.monster.parts : []
     },
     bow() {
       return this.$store.state.bow
-    }
+    },
   },
   methods: {
     displayPartName(item) {
@@ -97,7 +97,7 @@ export default {
         return `${item.name} [弾${item.ammo}]`
       }
     },
-    ...mapActions(['setMonster', 'setTarget', 'setWounded', 'setAnger'])
-  }
+    ...mapActions(['setMonster', 'setTarget', 'setWounded', 'setAnger']),
+  },
 }
 </script>

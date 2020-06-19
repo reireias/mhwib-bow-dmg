@@ -65,7 +65,7 @@ export default {
       saved: false,
       loaded: false,
       removed: false,
-      mySetKeys: []
+      mySetKeys: [],
     }
   },
   mounted() {
@@ -102,8 +102,8 @@ export default {
       const now = new Date()
       return `${now.getTime()}`
     },
-    ...mapActions(['setState'])
-  }
+    ...mapActions(['setState']),
+  },
 }
 </script>
 

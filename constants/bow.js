@@ -6,15 +6,15 @@ const bows = [
     element: {
       type: 'fire',
       value: 330,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 12,
     parts: false,
-    slot: '①'
+    slot: '①',
   },
   {
     name: 'ディノアローⅡ',
@@ -23,15 +23,15 @@ const bows = [
     element: {
       type: 'fire',
       value: 390,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 10,
     parts: true,
-    slot: '①①'
+    slot: '①①',
   },
   {
     name: '蛮顎竜ノ火矢Ⅱ',
@@ -40,15 +40,15 @@ const bows = [
     element: {
       type: 'fire',
       value: 450,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 10,
     parts: true,
-    slot: null
+    slot: null,
   },
   {
     name: 'ネロ・プラヌラ',
@@ -57,15 +57,15 @@ const bows = [
     element: {
       type: 'water',
       value: 270,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 12,
     parts: false,
-    slot: '①'
+    slot: '①',
   },
   {
     name: 'ワイズハンターボウⅢ',
@@ -74,15 +74,15 @@ const bows = [
     element: {
       type: 'water',
       value: 390,
-      hidden: true
+      hidden: true,
     },
     coating: {
       crossRange: true,
-      power: false
+      power: false,
     },
     rare: 11,
     parts: true,
-    slot: '③'
+    slot: '③',
   },
   {
     name: 'ラグーナシュートⅡ',
@@ -91,15 +91,15 @@ const bows = [
     element: {
       type: 'water',
       value: 330,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 10,
     parts: true,
-    slot: '②①'
+    slot: '②①',
   },
   {
     name: '王牙弓【稚雷】',
@@ -108,15 +108,15 @@ const bows = [
     element: {
       type: 'thunder',
       value: 240,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 12,
     parts: false,
-    slot: '②'
+    slot: '②',
   },
   {
     name: '万雷弓【羽々矢】',
@@ -125,15 +125,15 @@ const bows = [
     element: {
       type: 'thunder',
       value: 330,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 10,
     parts: false,
-    slot: '①'
+    slot: '①',
   },
   {
     name: '氷妖イヴェリア',
@@ -142,15 +142,15 @@ const bows = [
     element: {
       type: 'ice',
       value: 240,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 12,
     parts: false,
-    slot: '④'
+    slot: '④',
   },
   {
     name: 'ミスト＝グレイシア',
@@ -159,15 +159,15 @@ const bows = [
     element: {
       type: 'ice',
       value: 450,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 11,
     parts: false,
-    slot: '①'
+    slot: '①',
   },
   {
     name: 'アイシクルブリザードⅡ',
@@ -176,15 +176,15 @@ const bows = [
     element: {
       type: 'ice',
       value: 300,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: true
+      power: true,
     },
     rare: 10,
     parts: true,
-    slot: '①'
+    slot: '①',
   },
   {
     name: '屍弓ヴァルヴェロス',
@@ -193,15 +193,15 @@ const bows = [
     element: {
       type: 'dragon',
       value: 330,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: false
+      power: false,
     },
     rare: 11,
     parts: true,
-    slot: '②①'
+    slot: '②①',
   },
   {
     name: '龍封じの古弓Ⅱ',
@@ -210,21 +210,21 @@ const bows = [
     element: {
       type: 'dragon',
       value: 480,
-      hidden: false
+      hidden: false,
     },
     coating: {
       crossRange: true,
-      power: false
+      power: false,
     },
     rare: 11,
     parts: true,
-    slot: '①①'
-  }
+    slot: '①①',
+  },
 ]
 
 export const coatings = [
   { name: '強撃ビン', value: 1.35 },
-  { name: '接撃ビン', value: 1.2 }
+  { name: '接撃ビン', value: 1.2 },
 ]
 
 export default bows

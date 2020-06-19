@@ -24,7 +24,7 @@ describe('instance', () => {
       localVue,
       store,
       vuetify,
-      propsData
+      propsData,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()

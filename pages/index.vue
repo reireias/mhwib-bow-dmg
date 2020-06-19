@@ -58,13 +58,13 @@ export default {
     Motion,
     Target,
     Result,
-    MySet
+    MySet,
   },
   data() {
     return { show: false }
   },
   beforeCreate() {
     this.$store.dispatch('loadLocal')
-  }
+  },
 }
 </script>

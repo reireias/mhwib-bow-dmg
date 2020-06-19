@@ -85,7 +85,7 @@ export default {
       canteens,
       demonDrugs,
       seeds,
-      coatingsData: coatings
+      coatingsData: coatings,
     }
   },
   computed: {
@@ -101,7 +101,7 @@ export default {
       },
       set(value) {
         this.setBuff({ coating: value })
-      }
+      },
     },
     powerCharm: {
       get() {
@@ -109,7 +109,7 @@ export default {
       },
       set(value) {
         this.setBuff({ powerCharm: value })
-      }
+      },
     },
     powerTalon: {
       get() {
@@ -117,7 +117,7 @@ export default {
       },
       set(value) {
         this.setBuff({ powerTalon: value })
-      }
+      },
     },
     demonPowder: {
       get() {
@@ -125,7 +125,7 @@ export default {
       },
       set(value) {
         this.setBuff({ demonPowder: value })
-      }
+      },
     },
     canteen: {
       get() {
@@ -133,7 +133,7 @@ export default {
       },
       set(value) {
         this.setBuff({ canteen: value })
-      }
+      },
     },
     demonDrug: {
       get() {
@@ -141,7 +141,7 @@ export default {
       },
       set(value) {
         this.setBuff({ demonDrug: value })
-      }
+      },
     },
     seed: {
       get() {
@@ -149,8 +149,8 @@ export default {
       },
       set(value) {
         this.setBuff({ seed: value })
-      }
-    }
+      },
+    },
   },
   watch: {
     bow() {
@@ -162,7 +162,7 @@ export default {
         this.coating = null
       }
       this.updateCoatings()
-    }
+    },
   },
   methods: {
     displayBuff(item) {
@@ -180,8 +180,8 @@ export default {
         this.coatingsData[1].disabled = false
       }
     },
-    ...mapActions(['setBuff'])
-  }
+    ...mapActions(['setBuff']),
+  },
 }
 </script>
 
