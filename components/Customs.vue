@@ -65,7 +65,7 @@ export default {
       set(value) {
         this.setCustomAttack(value)
         this.update()
-      }
+      },
     },
     affinity: {
       get() {
@@ -74,7 +74,7 @@ export default {
       set(value) {
         this.setCustomAffinity(value)
         this.update()
-      }
+      },
     },
     element: {
       get() {
@@ -83,7 +83,7 @@ export default {
       set(value) {
         this.setCustomElement(value)
         this.update()
-      }
+      },
     },
     attackSlot() {
       return this.attack ? this.attack.slot : 0
@@ -93,7 +93,7 @@ export default {
     },
     elementSlot() {
       return this.element ? this.element.slot : 0
-    }
+    },
   },
   watch: {
     bow() {
@@ -103,7 +103,7 @@ export default {
         this.element = null
         this.update()
       }
-    }
+    },
   },
   methods: {
     customDisplayName(item) {
@@ -130,8 +130,8 @@ export default {
         item.disabled = this.maxSlot < item.slot + otherSlot
       })
     },
-    ...mapActions(['setCustomAttack', 'setCustomAffinity', 'setCustomElement'])
-  }
+    ...mapActions(['setCustomAttack', 'setCustomAffinity', 'setCustomElement']),
+  },
 }
 </script>
 

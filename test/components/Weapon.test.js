@@ -14,7 +14,7 @@ describe('instance', () => {
   let store
   beforeEach(() => {
     const getters = {
-      calcuratedWeapon: () => ({ attack: 240, affinity: 0, element: 300 })
+      calcuratedWeapon: () => ({ attack: 240, affinity: 0, element: 300 }),
     }
     store = createStore(getters)
   })
@@ -24,7 +24,7 @@ describe('instance', () => {
     const wrapper = shallowMount(target, {
       localVue,
       store,
-      vuetify
+      vuetify,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()

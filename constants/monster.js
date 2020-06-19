@@ -11,9 +11,9 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 30
-      }
-    ]
+        dragon: 30,
+      },
+    ],
   },
   {
     name: 'アンジャナフ',
@@ -27,7 +27,7 @@ const monsters = [
         water: 30,
         thunder: 15,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '頭',
@@ -38,7 +38,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首',
@@ -49,7 +49,7 @@ const monsters = [
         water: 20,
         thunder: 5,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '翼',
@@ -60,7 +60,7 @@ const monsters = [
         water: 30,
         thunder: 15,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '胴',
@@ -71,7 +71,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 10,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '脚',
@@ -82,7 +82,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 10,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '脚(破壊後)',
@@ -93,7 +93,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 10,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -104,9 +104,9 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'イビルジョー',
@@ -120,7 +120,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 5,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '頭(怒り)',
@@ -131,7 +131,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '首・背',
@@ -142,7 +142,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '首・背(怒り)',
@@ -153,7 +153,7 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 10,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '胸',
@@ -164,7 +164,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胸(怒り)',
@@ -175,7 +175,7 @@ const monsters = [
         water: 20,
         thunder: 25,
         ice: 15,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '腰',
@@ -186,7 +186,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '腰(怒り)',
@@ -197,7 +197,7 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 10,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '前脚',
@@ -208,7 +208,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 5,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '前脚(怒り)',
@@ -219,7 +219,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '後脚',
@@ -230,7 +230,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚(怒り)',
@@ -241,7 +241,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -252,7 +252,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '尻尾(怒り)',
@@ -263,9 +263,9 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 10,
-        dragon: 25
-      }
-    ]
+        dragon: 25,
+      },
+    ],
   },
   {
     name: 'イャンガルルガ',
@@ -279,7 +279,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首',
@@ -290,7 +290,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '腹',
@@ -301,7 +301,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '背',
@@ -312,7 +312,7 @@ const monsters = [
         water: 50,
         thunder: 10,
         ice: 20,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '翼',
@@ -323,7 +323,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -334,7 +334,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尾下',
@@ -345,9 +345,9 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ヴァルハザク',
@@ -361,7 +361,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '頭(破壊後)',
@@ -372,7 +372,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '首',
@@ -383,7 +383,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胸',
@@ -394,7 +394,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '腹',
@@ -405,7 +405,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '腹(破壊後)',
@@ -416,7 +416,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '翼',
@@ -427,7 +427,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '背中',
@@ -438,7 +438,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '背中(破壊後)',
@@ -449,7 +449,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '前脚',
@@ -460,7 +460,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚(破壊後)',
@@ -471,7 +471,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '後脚',
@@ -482,7 +482,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -493,7 +493,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尾先',
@@ -504,9 +504,9 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 15,
-        dragon: 0
-      }
-    ]
+        dragon: 0,
+      },
+    ],
   },
   {
     name: 'ヴォルガノス',
@@ -520,7 +520,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '頭(破壊後)',
@@ -531,7 +531,7 @@ const monsters = [
         water: 35,
         thunder: 15,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首',
@@ -542,7 +542,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -553,7 +553,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背中',
@@ -564,7 +564,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背中(破壊後)',
@@ -575,7 +575,7 @@ const monsters = [
         water: 30,
         thunder: 20,
         ice: 20,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: 'ヒレ',
@@ -586,7 +586,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -597,7 +597,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚(破壊後)',
@@ -608,7 +608,7 @@ const monsters = [
         water: 25,
         thunder: 5,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -619,7 +619,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾(破壊後)',
@@ -630,9 +630,9 @@ const monsters = [
         water: 30,
         thunder: 15,
         ice: 15,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ウラガンキン',
@@ -646,7 +646,7 @@ const monsters = [
         water: 20,
         thunder: 15,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '顎',
@@ -657,7 +657,7 @@ const monsters = [
         water: 40,
         thunder: 5,
         ice: 20,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '顎(破壊後)',
@@ -668,7 +668,7 @@ const monsters = [
         water: 20,
         thunder: 5,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '首上・背',
@@ -679,7 +679,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '首下',
@@ -690,7 +690,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '腹',
@@ -701,7 +701,7 @@ const monsters = [
         water: 30,
         thunder: 5,
         ice: 15,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '前脚',
@@ -712,7 +712,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '後脚',
@@ -723,7 +723,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -734,9 +734,9 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'オドガロン',
@@ -750,7 +750,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 30,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '首',
@@ -761,7 +761,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 20,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '胴・背',
@@ -772,7 +772,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -783,7 +783,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 25,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '後脚',
@@ -794,7 +794,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 25,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -805,9 +805,9 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 20,
-        dragon: 0
-      }
-    ]
+        dragon: 0,
+      },
+    ],
   },
   {
     name: 'キリン',
@@ -821,7 +821,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 20,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '上半身',
@@ -832,7 +832,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '上半身(帯電)',
@@ -843,7 +843,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '下半身',
@@ -854,7 +854,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '下半身(帯電)',
@@ -865,9 +865,9 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 10,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'クシャルダオラ',
@@ -881,7 +881,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -892,7 +892,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '翼',
@@ -903,7 +903,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '背中',
@@ -914,7 +914,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '腹',
@@ -925,7 +925,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '前脚',
@@ -936,7 +936,7 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚',
@@ -947,7 +947,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -958,9 +958,9 @@ const monsters = [
         water: 5,
         thunder: 20,
         ice: 0,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'クルルヤック',
@@ -974,7 +974,7 @@ const monsters = [
         water: 20,
         thunder: 15,
         ice: 15,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '前脚',
@@ -985,7 +985,7 @@ const monsters = [
         water: 20,
         thunder: 15,
         ice: 15,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴',
@@ -996,7 +996,7 @@ const monsters = [
         water: 20,
         thunder: 15,
         ice: 15,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -1007,9 +1007,9 @@ const monsters = [
         water: 20,
         thunder: 15,
         ice: 15,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'ジュラトドス',
@@ -1023,7 +1023,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '頭(破壊後)',
@@ -1034,7 +1034,7 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首',
@@ -1045,7 +1045,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -1056,7 +1056,7 @@ const monsters = [
         water: 0,
         thunder: 25,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴(破壊後)',
@@ -1067,7 +1067,7 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背中',
@@ -1078,7 +1078,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: 'ヒレ',
@@ -1089,7 +1089,7 @@ const monsters = [
         water: 0,
         thunder: 20,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -1100,7 +1100,7 @@ const monsters = [
         water: 0,
         thunder: 30,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚(破壊後)',
@@ -1111,7 +1111,7 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -1122,7 +1122,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾(破壊後)',
@@ -1133,9 +1133,9 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 5,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ジンオウガ',
@@ -1149,7 +1149,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '頭(破壊後)',
@@ -1160,7 +1160,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '胴',
@@ -1171,7 +1171,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴(破壊後)',
@@ -1182,7 +1182,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背',
@@ -1193,7 +1193,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 25,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背(破壊後)',
@@ -1204,7 +1204,7 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 30,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚',
@@ -1215,7 +1215,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚(破壊後)',
@@ -1226,7 +1226,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚',
@@ -1237,7 +1237,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚(破壊後)',
@@ -1248,7 +1248,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚根元',
@@ -1259,7 +1259,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚根元(破壊後)',
@@ -1270,7 +1270,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -1281,7 +1281,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾(破壊後)',
@@ -1292,7 +1292,7 @@ const monsters = [
         water: 10,
         thunder: 0,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尾先',
@@ -1303,9 +1303,9 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 20,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ゼノ・ジーヴァ',
@@ -1319,7 +1319,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '頭(破壊後)',
@@ -1330,7 +1330,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '首',
@@ -1341,7 +1341,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '首(破壊後)',
@@ -1352,7 +1352,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '翼',
@@ -1363,7 +1363,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '翼(破壊後)',
@@ -1374,7 +1374,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胸',
@@ -1385,7 +1385,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胸(破壊後)',
@@ -1396,7 +1396,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴',
@@ -1407,7 +1407,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴(破壊後)',
@@ -1418,7 +1418,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '前脚',
@@ -1429,7 +1429,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '前脚(破壊後)',
@@ -1440,7 +1440,7 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '後脚',
@@ -1451,7 +1451,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚(破壊後)',
@@ -1462,7 +1462,7 @@ const monsters = [
         water: 20,
         thunder: 20,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -1473,7 +1473,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾(破壊後)',
@@ -1484,7 +1484,7 @@ const monsters = [
         water: 20,
         thunder: 20,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尾先',
@@ -1495,7 +1495,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '尾先(破壊後)',
@@ -1506,9 +1506,9 @@ const monsters = [
         water: 30,
         thunder: 30,
         ice: 30,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'ゾラ・マグダラオス',
@@ -1522,7 +1522,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胴',
@@ -1533,7 +1533,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '胸',
@@ -1544,7 +1544,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 20,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '胸(破壊後)',
@@ -1555,7 +1555,7 @@ const monsters = [
         water: 30,
         thunder: 15,
         ice: 25,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '前脚',
@@ -1566,7 +1566,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚',
@@ -1577,7 +1577,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -1588,7 +1588,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '排熱器官',
@@ -1599,7 +1599,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '外殻',
@@ -1610,7 +1610,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '外殻（未発達）',
@@ -1621,9 +1621,9 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 20
-      }
-    ]
+        dragon: 20,
+      },
+    ],
   },
   {
     name: 'ツィツィヤック',
@@ -1637,7 +1637,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '頭',
@@ -1648,7 +1648,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '前脚',
@@ -1659,7 +1659,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴',
@@ -1670,7 +1670,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -1681,9 +1681,9 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 20,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'ディアブロス',
@@ -1697,7 +1697,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '頭',
@@ -1708,7 +1708,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 30,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '首',
@@ -1719,7 +1719,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '翼',
@@ -1730,7 +1730,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 30,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '背',
@@ -1741,7 +1741,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '腹',
@@ -1752,7 +1752,7 @@ const monsters = [
         water: 30,
         thunder: 10,
         ice: 35,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '脚',
@@ -1763,7 +1763,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -1774,7 +1774,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '尾先',
@@ -1785,9 +1785,9 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 20
-      }
-    ]
+        dragon: 20,
+      },
+    ],
   },
   {
     name: 'ディアブロス亜種',
@@ -1801,7 +1801,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '頭',
@@ -1812,7 +1812,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 30,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '首',
@@ -1823,7 +1823,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 20,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '翼',
@@ -1834,7 +1834,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 30,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '背',
@@ -1845,7 +1845,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '腹',
@@ -1856,7 +1856,7 @@ const monsters = [
         water: 30,
         thunder: 10,
         ice: 35,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '脚',
@@ -1867,7 +1867,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -1878,7 +1878,7 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尾先',
@@ -1889,9 +1889,9 @@ const monsters = [
         water: 20,
         thunder: 10,
         ice: 25,
-        dragon: 0
-      }
-    ]
+        dragon: 0,
+      },
+    ],
   },
   {
     name: 'テオ・テスカトル',
@@ -1905,7 +1905,7 @@ const monsters = [
         water: 30,
         thunder: 10,
         ice: 25,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -1916,7 +1916,7 @@ const monsters = [
         water: 20,
         thunder: 5,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '翼',
@@ -1927,7 +1927,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '腹・背',
@@ -1938,7 +1938,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 10,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -1949,7 +1949,7 @@ const monsters = [
         water: 20,
         thunder: 5,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚',
@@ -1960,7 +1960,7 @@ const monsters = [
         water: 15,
         thunder: 5,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -1971,9 +1971,9 @@ const monsters = [
         water: 20,
         thunder: 5,
         ice: 15,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ドスギルオス',
@@ -1987,7 +1987,7 @@ const monsters = [
         water: 30,
         thunder: 0,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -1998,7 +1998,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2009,7 +2009,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '背中',
@@ -2020,7 +2020,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -2031,7 +2031,7 @@ const monsters = [
         water: 25,
         thunder: 0,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚',
@@ -2042,7 +2042,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -2053,9 +2053,9 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ドスジャグラス',
@@ -2069,7 +2069,7 @@ const monsters = [
         water: 0,
         thunder: 20,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -2080,7 +2080,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2091,7 +2091,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '腹膨張',
@@ -2102,7 +2102,7 @@ const monsters = [
         water: 0,
         thunder: 20,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '背中',
@@ -2113,7 +2113,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -2124,7 +2124,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚',
@@ -2135,7 +2135,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -2146,9 +2146,9 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 0
-      }
-    ]
+        dragon: 0,
+      },
+    ],
   },
   {
     name: 'ドドガマル',
@@ -2162,7 +2162,7 @@ const monsters = [
         water: 20,
         thunder: 30,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '頭(破壊後)',
@@ -2173,7 +2173,7 @@ const monsters = [
         water: 20,
         thunder: 30,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -2184,7 +2184,7 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首(破壊後)',
@@ -2195,7 +2195,7 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2206,7 +2206,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '背中',
@@ -2217,7 +2217,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚',
@@ -2228,7 +2228,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚',
@@ -2239,7 +2239,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -2250,9 +2250,9 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 10,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'トビカガチ',
@@ -2266,7 +2266,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '首',
@@ -2277,7 +2277,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2288,7 +2288,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '背中',
@@ -2299,7 +2299,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -2310,7 +2310,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '後脚',
@@ -2321,7 +2321,7 @@ const monsters = [
         water: 15,
         thunder: 0,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -2332,9 +2332,9 @@ const monsters = [
         water: 30,
         thunder: 0,
         ice: 20,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'ナナ・テスカトリ',
@@ -2348,7 +2348,7 @@ const monsters = [
         water: 7,
         thunder: 7,
         ice: 30,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '首',
@@ -2359,7 +2359,7 @@ const monsters = [
         water: 3,
         thunder: 3,
         ice: 20,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '翼',
@@ -2370,7 +2370,7 @@ const monsters = [
         water: 7,
         thunder: 7,
         ice: 25,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '腹・背',
@@ -2381,7 +2381,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '前脚',
@@ -2392,7 +2392,7 @@ const monsters = [
         water: 3,
         thunder: 3,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚',
@@ -2403,7 +2403,7 @@ const monsters = [
         water: 3,
         thunder: 3,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -2414,9 +2414,9 @@ const monsters = [
         water: 3,
         thunder: 3,
         ice: 20,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'ネルギガンテ',
@@ -2430,7 +2430,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '角(破壊後)',
@@ -2441,7 +2441,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '頭',
@@ -2452,7 +2452,7 @@ const monsters = [
         water: 10,
         thunder: 151520,
         ice: 15,
-        dragon: 5510
+        dragon: 5510,
       },
       {
         name: '翼',
@@ -2463,7 +2463,7 @@ const monsters = [
         water: 5,
         thunder: 101015,
         ice: 5,
-        dragon: 101520
+        dragon: 101520,
       },
       {
         name: '背中',
@@ -2474,7 +2474,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '腹',
@@ -2485,7 +2485,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚',
@@ -2496,7 +2496,7 @@ const monsters = [
         water: 5,
         thunder: 151520,
         ice: 0,
-        dragon: 5510
+        dragon: 5510,
       },
       {
         name: '後脚',
@@ -2507,7 +2507,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -2518,7 +2518,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尾先',
@@ -2529,9 +2529,9 @@ const monsters = [
         water: 5,
         thunder: 151520,
         ice: 5,
-        dragon: 101015
-      }
-    ]
+        dragon: 101015,
+      },
+    ],
   },
   {
     name: 'パオウルムー',
@@ -2545,7 +2545,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -2556,7 +2556,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '顎袋',
@@ -2567,7 +2567,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '翼',
@@ -2578,7 +2578,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2589,7 +2589,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -2600,7 +2600,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -2611,9 +2611,9 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 10
-      }
-    ]
+        dragon: 10,
+      },
+    ],
   },
   {
     name: 'バゼルギウス',
@@ -2627,7 +2627,7 @@ const monsters = [
         water: 15,
         thunder: 25,
         ice: 20,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '翼',
@@ -2638,7 +2638,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '背中',
@@ -2649,7 +2649,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '腹',
@@ -2660,7 +2660,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '脚',
@@ -2671,7 +2671,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 10,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -2682,9 +2682,9 @@ const monsters = [
         water: 10,
         thunder: 20,
         ice: 15,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'プケプケ',
@@ -2698,7 +2698,7 @@ const monsters = [
         water: 0,
         thunder: 30,
         ice: 20,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -2709,7 +2709,7 @@ const monsters = [
         water: 0,
         thunder: 20,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴',
@@ -2720,7 +2720,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '翼',
@@ -2731,7 +2731,7 @@ const monsters = [
         water: 0,
         thunder: 25,
         ice: 15,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -2742,7 +2742,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -2753,9 +2753,9 @@ const monsters = [
         water: 0,
         thunder: 25,
         ice: 15,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ベヒーモス',
@@ -2769,7 +2769,7 @@ const monsters = [
         water: 50,
         thunder: 35,
         ice: 40,
-        dragon: 85
+        dragon: 85,
       },
       {
         name: '角(破壊後)',
@@ -2780,7 +2780,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '頭',
@@ -2791,7 +2791,7 @@ const monsters = [
         water: 25,
         thunder: 10,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '上半身',
@@ -2802,7 +2802,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 5,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '腹・腰',
@@ -2813,7 +2813,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '上腕',
@@ -2824,7 +2824,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '前脚',
@@ -2835,7 +2835,7 @@ const monsters = [
         water: 10,
         thunder: 5,
         ice: 5,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '後脚',
@@ -2846,7 +2846,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 25,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻尾',
@@ -2857,7 +2857,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 5,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '尻先',
@@ -2868,9 +2868,9 @@ const monsters = [
         water: 20,
         thunder: 20,
         ice: 20,
-        dragon: 10
-      }
-    ]
+        dragon: 10,
+      },
+    ],
   },
   {
     name: 'ボルボロス',
@@ -2884,7 +2884,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '頭(破壊後)',
@@ -2895,7 +2895,7 @@ const monsters = [
         water: 80,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '胴',
@@ -2906,7 +2906,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴(破壊後)',
@@ -2917,7 +2917,7 @@ const monsters = [
         water: 80,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '前脚',
@@ -2928,7 +2928,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '前脚(破壊後)',
@@ -2939,7 +2939,7 @@ const monsters = [
         water: 80,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '後脚',
@@ -2950,7 +2950,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 10,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '後脚(破壊後)',
@@ -2961,7 +2961,7 @@ const monsters = [
         water: 80,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾',
@@ -2972,7 +2972,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 15,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '尻尾(破壊後)',
@@ -2983,9 +2983,9 @@ const monsters = [
         water: 80,
         thunder: 0,
         ice: 15,
-        dragon: 10
-      }
-    ]
+        dragon: 10,
+      },
+    ],
   },
   {
     name: 'マム・タロト',
@@ -2999,7 +2999,7 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '頭(破壊後)',
@@ -3010,7 +3010,7 @@ const monsters = [
         water: 30,
         thunder: 50,
         ice: 0,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '胸',
@@ -3021,7 +3021,7 @@ const monsters = [
         water: 20,
         thunder: 0,
         ice: 40,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '前脚',
@@ -3032,9 +3032,9 @@ const monsters = [
         water: 10,
         thunder: 25,
         ice: 0,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'ラージャン',
@@ -3048,7 +3048,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 30,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '胴体',
@@ -3059,7 +3059,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚',
@@ -3070,7 +3070,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '前脚(破壊後)',
@@ -3081,7 +3081,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '後脚',
@@ -3092,7 +3092,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '後脚(破壊後)',
@@ -3103,7 +3103,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -3114,7 +3114,7 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾(破壊後)',
@@ -3125,9 +3125,9 @@ const monsters = [
         water: 5,
         thunder: 0,
         ice: 15,
-        dragon: 0
-      }
-    ]
+        dragon: 0,
+      },
+    ],
   },
   {
     name: 'ラドバルキン',
@@ -3141,7 +3141,7 @@ const monsters = [
         water: 20,
         thunder: 20,
         ice: 20,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '頭の骨',
@@ -3152,7 +3152,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '首',
@@ -3163,7 +3163,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胴',
@@ -3174,7 +3174,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 15,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '脚',
@@ -3185,7 +3185,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴と脚の骨',
@@ -3196,7 +3196,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -3207,9 +3207,9 @@ const monsters = [
         water: 15,
         thunder: 15,
         ice: 15,
-        dragon: 15
-      }
-    ]
+        dragon: 15,
+      },
+    ],
   },
   {
     name: 'リオレイア',
@@ -3223,7 +3223,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 15,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '首',
@@ -3234,7 +3234,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴・背',
@@ -3245,7 +3245,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '翼',
@@ -3256,7 +3256,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 10,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '脚',
@@ -3267,7 +3267,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -3278,9 +3278,9 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
-      }
-    ]
+        dragon: 20,
+      },
+    ],
   },
   {
     name: 'リオレイア亜種',
@@ -3294,7 +3294,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 15,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '首',
@@ -3305,7 +3305,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴・背',
@@ -3316,7 +3316,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '翼',
@@ -3327,7 +3327,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 10,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '脚',
@@ -3338,7 +3338,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -3349,7 +3349,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '尾先',
@@ -3360,9 +3360,9 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
-      }
-    ]
+        dragon: 20,
+      },
+    ],
   },
   {
     name: 'リオレウス',
@@ -3376,7 +3376,7 @@ const monsters = [
         water: 15,
         thunder: 20,
         ice: 15,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '首',
@@ -3387,7 +3387,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胴・背',
@@ -3398,7 +3398,7 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '翼',
@@ -3409,7 +3409,7 @@ const monsters = [
         water: 10,
         thunder: 15,
         ice: 10,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '脚',
@@ -3420,7 +3420,7 @@ const monsters = [
         water: 0,
         thunder: 5,
         ice: 0,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -3431,9 +3431,9 @@ const monsters = [
         water: 5,
         thunder: 10,
         ice: 5,
-        dragon: 20
-      }
-    ]
+        dragon: 20,
+      },
+    ],
   },
   {
     name: 'リオレウス亜種',
@@ -3447,7 +3447,7 @@ const monsters = [
         water: 15,
         thunder: 15,
         ice: 20,
-        dragon: 30
+        dragon: 30,
       },
       {
         name: '首',
@@ -3458,7 +3458,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '胴・背',
@@ -3469,7 +3469,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '翼',
@@ -3480,7 +3480,7 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 15,
-        dragon: 25
+        dragon: 25,
       },
       {
         name: '脚',
@@ -3491,7 +3491,7 @@ const monsters = [
         water: 0,
         thunder: 0,
         ice: 5,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '尻尾',
@@ -3502,7 +3502,7 @@ const monsters = [
         water: 5,
         thunder: 5,
         ice: 10,
-        dragon: 20
+        dragon: 20,
       },
       {
         name: '尾先',
@@ -3513,9 +3513,9 @@ const monsters = [
         water: 10,
         thunder: 10,
         ice: 15,
-        dragon: 25
-      }
-    ]
+        dragon: 25,
+      },
+    ],
   },
   {
     name: 'レイギエナ',
@@ -3529,7 +3529,7 @@ const monsters = [
         water: 15,
         thunder: 25,
         ice: 0,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '首',
@@ -3540,7 +3540,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '胴・背',
@@ -3551,7 +3551,7 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '翼',
@@ -3562,7 +3562,7 @@ const monsters = [
         water: 10,
         thunder: 20,
         ice: 0,
-        dragon: 5
+        dragon: 5,
       },
       {
         name: '脚',
@@ -3573,7 +3573,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 0,
-        dragon: 0
+        dragon: 0,
       },
       {
         name: '尻尾',
@@ -3584,9 +3584,9 @@ const monsters = [
         water: 5,
         thunder: 15,
         ice: 0,
-        dragon: 5
-      }
-    ]
+        dragon: 5,
+      },
+    ],
   },
   {
     name: 'レーシェン',
@@ -3600,7 +3600,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴',
@@ -3611,7 +3611,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '腕',
@@ -3622,7 +3622,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '脚',
@@ -3633,9 +3633,9 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
-      }
-    ]
+        dragon: 10,
+      },
+    ],
   },
   {
     name: 'エンシェント・レーシェン',
@@ -3649,7 +3649,7 @@ const monsters = [
         water: 0,
         thunder: 15,
         ice: 10,
-        dragon: 15
+        dragon: 15,
       },
       {
         name: '胴',
@@ -3660,7 +3660,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '腕',
@@ -3671,7 +3671,7 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
+        dragon: 10,
       },
       {
         name: '脚',
@@ -3682,10 +3682,10 @@ const monsters = [
         water: 0,
         thunder: 10,
         ice: 5,
-        dragon: 10
-      }
-    ]
-  }
+        dragon: 10,
+      },
+    ],
+  },
 ]
 
 export default monsters

@@ -22,11 +22,11 @@ import bows from '@/constants/bow'
 
 export default {
   components: {
-    BowDetail
+    BowDetail,
   },
   data() {
     return {
-      bows
+      bows,
     }
   },
   computed: {
@@ -36,11 +36,11 @@ export default {
       },
       set(value) {
         this.setBow(value)
-      }
-    }
+      },
+    },
   },
   methods: {
-    ...mapActions(['setBow'])
-  }
+    ...mapActions(['setBow']),
+  },
 }
 </script>

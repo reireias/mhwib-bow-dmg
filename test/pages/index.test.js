@@ -13,7 +13,7 @@ localVue.use(Vuetify)
 describe('index', () => {
   let store
   const actions = {
-    loadLocal: jest.fn()
+    loadLocal: jest.fn(),
   }
   beforeEach(() => {
     store = createStore({}, actions)
@@ -24,7 +24,7 @@ describe('index', () => {
     const wrapper = shallowMount(target, {
       localVue,
       store,
-      vuetify
+      vuetify,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     // TODO

@@ -21,7 +21,7 @@ describe('instance', () => {
     const wrapper = shallowMount(target, {
       localVue,
       store,
-      vuetify
+      vuetify,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
@@ -36,7 +36,7 @@ describe('fll skill', () => {
     const wrapper = shallowMount(target, {
       localVue,
       store,
-      vuetify
+      vuetify,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()

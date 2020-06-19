@@ -4,8 +4,8 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/mhwib-bow-dmg/'
-        }
+          base: '/mhwib-bow-dmg/',
+        },
       }
     : {}
 
@@ -23,61 +23,61 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'mhwib-bow-dmg'
+        content: 'mhwib-bow-dmg',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://reireias.github.io/mhwib-bow-dmg'
+        content: 'https://reireias.github.io/mhwib-bow-dmg',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'MHW:Iceborne 弓専用ダメージ計算機'
+        content: 'MHW:Iceborne 弓専用ダメージ計算機',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png'
+        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png',
       },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary'
+        content: 'summary',
       },
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@mhwbowdmg'
+        content: '@mhwbowdmg',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'MHW 弓専用ダメージ計算機'
+        content: 'MHW 弓専用ダメージ計算機',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'MHW Iceborne用の弓に特化したダメージ計算機です。'
+        content: 'MHW Iceborne用の弓に特化したダメージ計算機です。',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png'
-      }
+        content: 'https://reireias.github.io/mhwib-bow-dmg/bow.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -97,7 +97,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
    ** Nuxt.js modules
@@ -105,14 +105,15 @@ export default {
   modules: ['@nuxtjs/pwa', '@nuxtjs/google-analytics'],
   pwa: {
     workbox: {
-      routerBase: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/mhwib-bow-dmg' : '/'
-    }
+      routerBase:
+        process.env.DEPLOY_ENV === 'GH_PAGES' ? '/mhwib-bow-dmg' : '/',
+    },
   },
   googleAnalytics: {
     id: 'UA-149343004-2',
     debug: {
-      sendHitTask: true
-    }
+      sendHitTask: true,
+    },
   },
   /*
    ** vuetify module configuration
@@ -130,14 +131,14 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+        },
+      },
+    },
   },
   /*
    ** Build configuration
    */
   build: {},
-  ...routerBase
+  ...routerBase,
 }

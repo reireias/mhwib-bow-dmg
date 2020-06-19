@@ -128,7 +128,7 @@ import skills from '@/constants/skill'
 export default {
   data() {
     return {
-      skills
+      skills,
     }
   },
   computed: {
@@ -138,7 +138,7 @@ export default {
       },
       set(value) {
         this.setSkill({ attackBoost: value })
-      }
+      },
     },
     criticalEye: {
       get() {
@@ -146,7 +146,7 @@ export default {
       },
       set(value) {
         this.setSkill({ criticalEye: value })
-      }
+      },
     },
     weaknessExploit: {
       get() {
@@ -154,7 +154,7 @@ export default {
       },
       set(value) {
         this.setSkill({ weaknessExploit: value })
-      }
+      },
     },
     criticalBoost: {
       get() {
@@ -162,7 +162,7 @@ export default {
       },
       set(value) {
         this.setSkill({ criticalBoost: value })
-      }
+      },
     },
     agitator: {
       get() {
@@ -170,7 +170,7 @@ export default {
       },
       set(value) {
         this.setSkill({ agitator: value })
-      }
+      },
     },
     peakPerformance: {
       get() {
@@ -178,7 +178,7 @@ export default {
       },
       set(value) {
         this.setSkill({ peakPerformance: value })
-      }
+      },
     },
     latentPower: {
       get() {
@@ -186,7 +186,7 @@ export default {
       },
       set(value) {
         this.setSkill({ latentPower: value })
-      }
+      },
     },
     fortify: {
       get() {
@@ -194,7 +194,7 @@ export default {
       },
       set(value) {
         this.setSkill({ fortify: value })
-      }
+      },
     },
     elementAttack: {
       get() {
@@ -202,7 +202,7 @@ export default {
       },
       set(value) {
         this.setSkill({ elementAttack: value })
-      }
+      },
     },
     freeElem: {
       get() {
@@ -210,7 +210,7 @@ export default {
       },
       set(value) {
         this.setSkill({ freeElem: value })
-      }
+      },
     },
     criticalElement: {
       get() {
@@ -218,7 +218,7 @@ export default {
       },
       set(value) {
         this.setSkill({ criticalElement: value })
-      }
+      },
     },
     elementBoost: {
       get() {
@@ -226,8 +226,8 @@ export default {
       },
       set(value) {
         this.setSkill({ elementBoost: value })
-      }
-    }
+      },
+    },
   },
   methods: {
     displaySkill(item) {
@@ -247,7 +247,7 @@ export default {
       this.criticalElement = null
       this.elementBoost = null
     },
-    ...mapActions(['setSkill'])
-  }
+    ...mapActions(['setSkill']),
+  },
 }
 </script>

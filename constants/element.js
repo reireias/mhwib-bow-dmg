@@ -3,5 +3,5 @@ export const elementNameMap = {
   water: '水',
   thunder: '雷',
   ice: '氷',
-  dragon: '龍'
+  dragon: '龍',
 }

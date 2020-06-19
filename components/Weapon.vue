@@ -63,11 +63,11 @@ export default {
   components: {
     Bow,
     Customs,
-    Parts
+    Parts,
   },
   computed: {
     ...mapState(['bow', 'custom']),
-    ...mapGetters(['calcuratedWeapon'])
-  }
+    ...mapGetters(['calcuratedWeapon']),
+  },
 }
 </script>

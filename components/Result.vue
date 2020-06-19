@@ -80,11 +80,11 @@ const headers = [
   { text: '通常時', value: 'base', sortable: false },
   { text: '会心時', value: 'critical', sortable: false },
   { text: '期待値', value: 'expected', sortable: false },
-  { text: '期待値合計', value: 'total', sortable: false }
+  { text: '期待値合計', value: 'total', sortable: false },
 ]
 export default {
   components: {
-    ResultText
+    ResultText,
   },
   data() {
     return {
@@ -94,10 +94,10 @@ export default {
       historyHeaders: [
         { text: '武器', value: 'bow', sortable: false },
         ...headers,
-        { text: '削除', value: 'delete', sortable: false }
+        { text: '削除', value: 'delete', sortable: false },
       ],
       resltText: '',
-      historyData: []
+      historyData: [],
     }
   },
   computed: {
@@ -109,7 +109,7 @@ export default {
       return this.historyData.filter((h) => h.id !== currentResultId)
     },
     ...mapState(['bow', 'motions']),
-    ...mapGetters(['condition'])
+    ...mapGetters(['condition']),
   },
   methods: {
     calcurate() {
@@ -118,7 +118,7 @@ export default {
       this.results = this.motions.map((motion) => {
         const motionParam = {
           value: motion.value,
-          elementRate: motion.elementRate
+          elementRate: motion.elementRate,
         }
         cond.motion = motionParam
         const detail = damageDetail(cond)
@@ -132,7 +132,7 @@ export default {
           expected: `物理: ${this.round(
             detail.expected.physical
           )}, 属性: ${this.round(detail.expected.elemental)}`,
-          total: this.round(expected * motion.count)
+          total: this.round(expected * motion.count),
         }
       })
       this.historyData.unshift(this.results[0])
@@ -146,8 +146,8 @@ export default {
     },
     deleteHistory(item) {
       this.historyData = this.historyData.filter((h) => h.id !== item.id)
-    }
-  }
+    },
+  },
 }
 </script>
 

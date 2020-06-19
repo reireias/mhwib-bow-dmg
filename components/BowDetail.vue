@@ -14,8 +14,8 @@ export default {
     bow: {
       type: Object,
       default: null,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     affinity() {
@@ -29,8 +29,8 @@ export default {
     },
     slot() {
       return this.bow.slot ? `, ${this.bow.slot}` : ''
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -13,17 +13,17 @@ export const state = () => ({
     demonPowder: true,
     canteen: 15,
     demonDrug: null,
-    seed: 10
+    seed: 10,
   },
   skill: {
     weaknessExploit: 3,
-    elementAttack: 6
+    elementAttack: 6,
   },
   motions: defaultState.motions,
   monster: defaultState.monster,
   target: defaultState.target,
   anger: true,
-  wounded: true
+  wounded: true,
 })
 
 const saveLocal = (state) => {
@@ -88,7 +88,7 @@ export const mutations = {
   setWounded(state, wounded) {
     state.wounded = wounded
     saveLocal(state)
-  }
+  },
 }
 
 export const actions = {
@@ -133,7 +133,7 @@ export const actions = {
   },
   setWounded({ commit }, payload) {
     commit('setWounded', payload)
-  }
+  },
 }
 
 export const getters = {
@@ -158,7 +158,7 @@ export const getters = {
       attack,
       rawAttack,
       affinity,
-      element
+      element,
     }
   },
   customAttackValue(state) {
@@ -182,7 +182,7 @@ export const getters = {
       affinity: calcuratedWeapon.affinity,
       element: calcuratedWeapon.element,
       elementHidden: state.bow.element.hidden,
-      sharpness: 'ammo'
+      sharpness: 'ammo',
     }
   },
   target(state) {
@@ -191,14 +191,14 @@ export const getters = {
       // TODO: bowにelement必ず入るかチェック
       elementalEffectiveness: state.target[state.bow.element.type],
       anger: state.anger,
-      wounded: state.wounded
+      wounded: state.wounded,
     }
   },
   buff(state) {
     const buff = {
       powerCharm: state.buff.powerCharm,
       powerTalon: state.buff.powerTalon,
-      demonPowder: state.buff.demonPowder
+      demonPowder: state.buff.demonPowder,
     }
     if (state.buff.seed === 10) {
       buff.mightSeed = true
@@ -232,7 +232,7 @@ export const getters = {
       weapon: getters.weapon,
       target: getters.target,
       buff: getters.buff,
-      skill: state.skill
+      skill: state.skill,
     }
-  }
+  },
 }

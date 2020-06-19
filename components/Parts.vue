@@ -17,7 +17,7 @@ import parts from '@/constants/parts'
 export default {
   data() {
     return {
-      parts
+      parts,
     }
   },
   computed: {
@@ -30,18 +30,18 @@ export default {
       },
       set(v) {
         this.setParts(v)
-      }
-    }
+      },
+    },
   },
   watch: {
     bow() {
       if (this.bow && !this.bow.parts) {
         this.value = null
       }
-    }
+    },
   },
   methods: {
-    ...mapActions(['setParts'])
-  }
+    ...mapActions(['setParts']),
+  },
 }
 </script>

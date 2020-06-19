@@ -17,12 +17,12 @@ export default {
     result: {
       type: Object,
       default: null,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      copied: false
+      copied: false,
     }
   },
   computed: {
@@ -34,7 +34,7 @@ export default {
       'skill',
       'motions',
       'monster',
-      'target'
+      'target',
     ]),
     ...mapGetters(['condition']),
     text() {
@@ -114,14 +114,14 @@ export default {
       const elem = this.bow.element.type
       const part = `弾${this.target.ammo}, ${elementNameMap[elem]}${this.target[elem]}`
       return `${this.monster.name} ${this.target.name} [${part}]`
-    }
+    },
   },
   methods: {
     copy() {
       navigator.clipboard.writeText(this.text).then(() => {
         this.copied = true
       })
-    }
-  }
+    },
+  },
 }
 </script>
