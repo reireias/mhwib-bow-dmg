@@ -2,8 +2,8 @@ importScripts('/mhwib-bow-dmg/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/mhwib-bow-dmg/_nuxt/app.98998b3.js",
-    "revision": "3cf32e859ca84c197e578ee6f825cee4"
+    "url": "/mhwib-bow-dmg/_nuxt/app.9f0a0f1.js",
+    "revision": "7025c994f4b2d0e7dbd75b6c81b0deeb"
   },
   {
     "url": "/mhwib-bow-dmg/_nuxt/commons.app.79b2d39.js",
