@@ -2,28 +2,28 @@ importScripts('/mhwib-bow-dmg/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/mhwib-bow-dmg/_nuxt/app.9f0a0f1.js",
-    "revision": "7025c994f4b2d0e7dbd75b6c81b0deeb"
+    "url": "/mhwib-bow-dmg/_nuxt/app.4274285.js",
+    "revision": "15f9365dc4e6aeca1ccca176fae1c323"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/commons.app.79b2d39.js",
-    "revision": "9114292ebdb5406fd62cc7256928cd88"
+    "url": "/mhwib-bow-dmg/_nuxt/commons.app.f3fa7ff.js",
+    "revision": "49964eddf49d4cb211edf78979af0079"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/pages/index.75dca22.js",
-    "revision": "98c336891e32c5f81a667e611960b1b1"
+    "url": "/mhwib-bow-dmg/_nuxt/pages/index.e72be68.js",
+    "revision": "a77de76311c440c07f958233dc5557ee"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/runtime.873b73b.js",
-    "revision": "4889c9b8142730a8917e59acca8c9000"
+    "url": "/mhwib-bow-dmg/_nuxt/runtime.8a98adb.js",
+    "revision": "9b05ed48054904e1da9033a25c858a5c"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/vendors.app.c2f14d4.js",
-    "revision": "4c4c918dbfb5f997286acf1d88e73abc"
+    "url": "/mhwib-bow-dmg/_nuxt/vendors.app.d011172.js",
+    "revision": "bde5801eb9abac44d6b70717f48b1ce5"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/vendors.pages/index.2cd4ea8.js",
-    "revision": "b79de069461d3a5a44555bce9a23f5ca"
+    "url": "/mhwib-bow-dmg/_nuxt/vendors.pages/index.1214b75.js",
+    "revision": "1cc1aec6c00a9b2e4e0c07b40be6d865"
   }
 ], {
   "cacheId": "mhwib-bow-dmg",
