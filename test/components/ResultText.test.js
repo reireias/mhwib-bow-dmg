@@ -24,7 +24,6 @@ describe('instance', () => {
       vuetify,
       propsData: { result: buildResult() },
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 })

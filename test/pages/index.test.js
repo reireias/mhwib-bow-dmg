@@ -26,8 +26,6 @@ describe('index', () => {
       store,
       vuetify,
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
-    // TODO
-    // expect(wrapper.html()).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })

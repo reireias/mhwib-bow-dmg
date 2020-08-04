@@ -23,7 +23,6 @@ describe('instance', () => {
       store,
       vuetify,
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 })
@@ -38,7 +37,6 @@ describe('fll skill', () => {
       store,
       vuetify,
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 })

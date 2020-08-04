@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index should be vue instance 1`] = `
+"<v-tabs-stub activeclass=\\"\\" fixedtabs=\\"true\\" nexticon=\\"$next\\" previcon=\\"$prev\\" slidersize=\\"2\\">
+  <v-tab-stub ripple=\\"true\\">計算</v-tab-stub>
+  <v-tab-stub ripple=\\"true\\">マイセット</v-tab-stub>
+  <v-tab-item-stub>
+    <v-container-stub tag=\\"div\\">
+      <v-row-stub tag=\\"div\\" justify=\\"center\\">
+        <div class=\\"title secondary--text\\">MHW:Iceborne</div>
+      </v-row-stub>
+      <v-row-stub tag=\\"div\\" justify=\\"center\\">
+        <div class=\\"display-1 secondary--text\\">弓専用ダメージ計算機</div>
+      </v-row-stub>
+      <v-row-stub tag=\\"div\\">
+        <weapon-stub></weapon-stub>
+      </v-row-stub>
+      <v-divider-stub></v-divider-stub>
+      <v-row-stub tag=\\"div\\">
+        <buff-stub></buff-stub>
+      </v-row-stub>
+      <v-divider-stub></v-divider-stub>
+      <v-row-stub tag=\\"div\\">
+        <skill-stub></skill-stub>
+      </v-row-stub>
+      <v-divider-stub></v-divider-stub>
+      <v-row-stub tag=\\"div\\">
+        <motion-stub></motion-stub>
+      </v-row-stub>
+      <v-divider-stub></v-divider-stub>
+      <v-row-stub tag=\\"div\\">
+        <target-stub></target-stub>
+      </v-row-stub>
+      <v-divider-stub></v-divider-stub>
+      <v-row-stub tag=\\"div\\">
+        <result-stub></result-stub>
+      </v-row-stub>
+    </v-container-stub>
+  </v-tab-item-stub>
+  <v-tab-item-stub>
+    <my-set-stub></my-set-stub>
+  </v-tab-item-stub>
+</v-tabs-stub>"
+`;

@@ -23,7 +23,6 @@ describe('instance', () => {
       store,
       vuetify,
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 })
