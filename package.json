@@ -21,7 +21,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "mhwdmg": ">=0.4.4",
     "nuxt": "^2.13.2",
-    "vuetify": "^2.2.8"
+    "vuetify": "^2.3.7"
   },
   "devDependencies": {
     "@mdi/font": "^5.4.55",
