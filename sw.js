@@ -14,16 +14,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "a77de76311c440c07f958233dc5557ee"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/runtime.8a98adb.js",
-    "revision": "9b05ed48054904e1da9033a25c858a5c"
+    "url": "/mhwib-bow-dmg/_nuxt/runtime.c0ee239.js",
+    "revision": "383019e459b8ae6a0837708d02378c4a"
   },
   {
     "url": "/mhwib-bow-dmg/_nuxt/vendors.app.d011172.js",
     "revision": "bde5801eb9abac44d6b70717f48b1ce5"
   },
   {
-    "url": "/mhwib-bow-dmg/_nuxt/vendors.pages/index.1214b75.js",
-    "revision": "1cc1aec6c00a9b2e4e0c07b40be6d865"
+    "url": "/mhwib-bow-dmg/_nuxt/vendors.pages/index.e176e2d.js",
+    "revision": "6c7e9bb7e46d97e0d37eb1c1d6d0796f"
   }
 ], {
   "cacheId": "mhwib-bow-dmg",
